@@ -1,0 +1,86 @@
+<% 
+    const coffeeData = [{
+        title:"아이스 아메리카노",
+        titleEng:"Iced Americano",
+        imgs:"menu/coffee01.jpg",
+        h3Class:"",
+        h3Text:""
+    },{
+        title:"아메리카노",
+        titleEng:"Americano",
+        imgs:"menu/coffee02.jpg",
+        h3Class:"",
+        h3Text:""
+    },{
+        title:"아이스 룽고",
+        titleEng:"Iced Lungo",
+        imgs:"menu/coffee03.jpg",
+        h3Class:"best",
+        h3Text:"BEST"
+    },{
+        title:"룽고",
+        titleEng:"Lungo",
+        imgs:"menu/coffee04.jpg",
+        h3Class:"best",
+        h3Text:"BEST"
+    },{
+        title:"에스프레소",
+        titleEng:"Espresso",
+        imgs:"menu/coffee05.jpg",
+        h3Class:"best",
+        h3Text:"BEST"
+    },{
+        title:"아이스크림 카페 라떼",
+        titleEng:"Icecream Cafe Latte",
+        imgs:"menu/coffee06.jpg",
+        h3Class:"best",
+        h3Text:"BEST"
+    },{
+        title:"아이스 카라멜 마키아토",
+        titleEng:"Iced Caramel Macchiato",
+        imgs:"menu/coffee07.jpg",
+        h3Class:"",
+        h3Text:""
+    },{
+        title:"시나몬 카페 라떼",
+        titleEng:"Cinnamon Cafe Latte",
+        imgs:"menu/coffee08.jpg",
+        h3Class:"",
+        h3Text:""
+    },{
+        title:"아이스 디카페인 블렌드",
+        titleEng:"Iced Decaf Blend",
+        imgs:"menu/coffee09.jpg",
+        h3Class:"best",
+        h3Text:"BEST"
+    },{
+        title:"디카페인 블렌드",
+        titleEng:"Decaf Blend",
+        imgs:"menu/coffee10.jpg",
+        h3Class:"",
+        h3Text:""
+    },{
+        title:"스페니쉬 크림 콜드브루",
+        titleEng:"Spanish Cream Cold Brew",
+        imgs:"menu/coffee11.jpg",
+        h3Class:"",
+        h3Text:""
+    },{
+        title:"스페셜티 커피",
+        titleEng:"Specialty Coffee",
+        imgs:"menu/coffee12.png",
+        h3Class:"",
+        h3Text:""
+    }]
+%>
+
+<% for( let i=0; i < coffeeData.length; i++ ) { %>
+    <div class="box">
+        <h3 class="<%- coffeeData[i].h3Class %>"><%- coffeeData[i].h3Text %></h3>
+        <div class="imgWrap">
+            <img src="/img/<%- coffeeData[i].imgs %>">
+        </div>
+        <h2><%- coffeeData[i].title %></h2>
+        <span><%- coffeeData[i].titleEng %></p>
+    </div>
+<% } %>

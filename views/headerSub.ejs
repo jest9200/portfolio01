@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/js/jquery-3.7.0.min.js"></script>
+    <script defer src="/js/headerCommon.js"></script>
+    <% if (cssFiles.length !== 0) { %>
+        <% for( let i=0; i < cssFiles.length; i++ ) { %>
+            <link rel="stylesheet" href="/css/<%- cssFiles[i] %>">
+        <% } %>
+    <% } %>
+    <% if (jsFiles.length !== 0) { %>
+        <% for( let i=0; i < jsFiles.length; i++ ) { %>
+            <script defer src="/js/<%- jsFiles[i] %>"></script>
+        <% } %>
+    <% } %>
+</head>
+<body>
+<div id="header">
+    <div class="center">
+        <h1 class="logo"><a href="/"><img src="/img/logo_on.png"></a></h1>
+        <ul class="gnb">
+            <li><a href="/aboutus/brand">ABOUT US</a></li>
+            <li><a href="/menu/new">MENU</a></li>
+            <li><a href="/store">STORE</a></li>
+            <li><a href="/society/pbs">SOCIETY</a></li>
+            <li><a href="/whatsnew/event">WHAT'S NEW</a></li>
+            <li><a href="/e-shop">E-SHOP</a></li>
+        </ul>
+        <div class="subWrap">
+            <ul class="subTop">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="/util_menu/qna">문의하기</a></li>
+                <li><a href="/util_menu/recruit">채용</a></li>
+                <li><a href="/util_menu/faq">FAQ</a></li>
+            </ul>
+            <ul class="subBot">
+                <li><a href="/util_menu/contactus"><i class="fa-solid fa-house"></i><span>신규입점제의</span></a></li>
+                <li><a href="/util_menu/coffeebeans"><i class="fa-solid fa-mug-saucer"></i></i><span>납품문의</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="header2">
+    <div class="bg"></div>
+    <div class="center">
+        <h1 class="logo"><a href="/"><img src="/img/logo_on.png"></a></h1>
+        <ul class="gnb">
+            <li>
+                <a href="/aboutus/brand">ABOUT US</a>
+                <ul class="depth2">
+                    <li><a href="/aboutus/brand">Brand</a></li>
+                    <li><a href="/aboutus/introduce">회사소개</a></li>
+                    <li><a href="/aboutus/csr">CSR</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/menu/new">MENU</a>
+                <ul class="depth2">
+                    <li><a href="/menu/new">NEW</a></li>
+                    <li><a href="/menu/coffee">COFFEE</a></li>
+                    <li><a href="/menu/beverage">BEVERAGE</a></li>
+                    <li><a href="/menu/icecream">ICE-CREAM</a></li>
+                    <li><a href="/menu/food">FOOD</a></li>
+                    <li><a href="/menu/product">PRODUCT</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/store">STORE</a>
+                <ul class="depth2">
+                    <li><a href="/store">매장찾기</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/society/pbs">SOCIETY</a>
+                <ul class="depth2">
+                    <li><a href="/society/pbs">PB Society</a></li>
+                    <li><a href="/society/rating">회원 등급 혜택</a></li>
+                    <li><a href="/society/ecard">e-Card 선물</a></li>
+                    <li><a href="/society/mobileapp">모바일 App 안내</a></li>
+                    <li><a href="/society/partnership">제휴혜택 안내</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/whatsnew/event">WHAT'S NEW</a>
+                <ul class="depth2">
+                    <li><a href="/whatsnew/event">Event/News</a></li>
+                    <li><a href="/whatsnew/notice">Notice</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/e-shop">E-SHOP</a>
+                <ul class="depth2">
+                    <li><a href="/e-shop">E-SHOP 소개</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="subWrap">
+            <ul class="subTop">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="/util_menu/qna">문의하기</a></li>
+                <li><a href="/util_menu/recruit">채용</a></li>
+                <li><a href="/util_menu/faq">FAQ</a></li>
+            </ul>
+            <ul class="subBot">
+                <li><a href="/util_menu/contactus"><i class="fa-solid fa-house"></i><span>신규입점제의</span></a></li>
+                <li><a href="/util_menu/coffeebeans"><i class="fa-solid fa-mug-saucer"></i></i><span>납품문의</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>

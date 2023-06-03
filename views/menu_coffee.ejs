@@ -1,0 +1,30 @@
+<%- include("headerSub",
+{title:"Menu | PaulBassett",
+cssFiles:["menu.css"],
+jsFiles:["menu/isotope.js"]})%>
+    <div id="container" class="coffee">
+        <div class="cont1">
+            <h1>COFFEE</h1>
+            <p>한잔의 완벽한 커피</p>
+        </div>
+        <div class="cont2">
+            <div class="menuWrap">
+                <div class="center">
+                    <ul class="menus">
+                        <li><a class="link1_1" href="/menu/new">NEW</a></li>
+                        <li class="on"><a class="link1_2" href="/menu/coffee">COFFEE</a></li>
+                        <li><a class="link1_3" href="/menu/beverage">BEVERAGE</a></li>
+                        <li><a class="link1_4" href="/menu/icecream">ICE-CREAM</a></li>
+                        <li><a class="link1_5" href="/menu/food">FOOD</a></li>
+                        <li><a class="link1_6" href="/menu/product">PRODUCT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="productWrap">
+                <div class="center">
+                    <%- include("listCoffee") %>
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include("footerSub")%>
