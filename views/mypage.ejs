@@ -1,0 +1,61 @@
+<%- include("headerSub", {title:"My Page | PaulBassett", cssFiles:["mypage.css"], jsFiles:[]})%>
+    <div id="container">
+        <div class="cont1"></div>
+        <div class="cont2">
+            <div class="center">
+                <div class="imgWrap">
+                    <img src="/img/mypageBg.jpg">
+                </div>
+                <div class="textWrap">
+                    <h2>PaulBassett My Page</h2>
+                    <p><%- login.membername %> 님의 폴 바셋 회원정보 페이지입니다.</p>
+                    <div class="infoWrap">
+                        <div class="info idWrap">
+                            <div class="leftWrap">
+                                <h4>회원 아이디</h4>
+                            </div>
+                            <div class="rightWrap">
+                                <p><%- login.memberid %></p>
+                            </div>
+                        </div>
+                        <div class="info nameWrap">
+                            <div class="leftWrap">
+                                <h4>회원 이름</h4>
+                            </div>
+                            <div class="rightWrap">
+                                <p><%- login.membername %></p>
+                            </div>
+                        </div>
+                        <div class="info birthWrap">
+                            <div class="leftWrap">
+                                <h4>생년월일</h4>
+                            </div>
+                            <div class="rightWrap">
+                                <p><%- login.memberbirth %></p>
+                            </div>
+                        </div>
+                        <div class="info phoneWrap">
+                            <div class="leftWrap">
+                                <h4>휴대폰 번호</h4>
+                            </div>
+                            <div class="rightWrap">
+                                <p><%- login.memberphone %></p>
+                            </div>
+                        </div>
+                        <div class="info birthWrap">
+                            <div class="leftWrap">
+                                <h4>이메일 주소</h4>
+                            </div>
+                            <div class="rightWrap">
+                                <p><%- login.memberemail %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="linkWrap">
+                        <a href="/">메인페이지로</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include("footerSub")%>

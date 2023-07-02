@@ -1,0 +1,214 @@
+<%- include("headerSub", {title:"Join | PaulBassett", cssFiles:["join.css"], jsFiles:["login_join/joincheck.js"]})%>
+    <div id="container">
+        <div class="cont1"></div>
+        <div class="cont2">
+            <div class="center">
+                <h2>회원정보 입력</h2>
+                <p>이용약관과 개인정보처리방침에 대한 안내를 읽고 동의해주세요.</p>
+                <div class="formWrap">
+                    <form id="join" action="/joindb" method="post">
+                        <div class="info nameWrap">
+                            <div class="form_control name">
+                                <label for="membername">이름 <span>*</span></label>
+                                <input type="text" id="membername" name="membername" placeholder="이름을 입력해주세요.">
+                                <span class="error_msg"></span>
+                            </div>
+                        </div>
+                        <div class="info birthWrap">
+                            <div class="form_control birth">
+                                <label for="memberbirth">생년월일 <span>*</span></label>
+                                <input type="text" id="memberbirth" name="memberbirth"
+                                    placeholder="생년월일을 입력해주세요. (예시 : 2000-01-01)">
+                                <span class="error_msg"></span>
+                            </div>
+                        </div>
+                        <div class="info idWrap">
+                            <div class="form_control id">
+                                <label for="memberid">아이디 <span>*</span></label>
+                                <input type="text" id="memberid" name="memberid" placeholder="아이디를 생성해주세요.">
+                                <span class="error_msg"></span>
+                            </div>
+                        </div>
+                        <div class="info passWrap">
+                            <div class="form_control pass">
+                                <label for="memberpass">패스워드 <span>*</span></label>
+                                <input type="password" id="memberpass" name="memberpass" placeholder="패스워드를 생성해주세요.">
+                                <span class="error_msg"></span>
+                            </div>
+                        </div>
+                        <div class="info passchkWrap">
+                            <div class="form_control passchk">
+                                <label for="memberpasschk">패스워드 확인 <span>*</span></label>
+                                <input type="password" id="memberpasschk" name="memberpasschk"
+                                    placeholder="패스워드를 확인해주세요.">
+                                <span class="error_msg"></span>
+                            </div>
+                        </div>
+                        <div class="info phoneWrap">
+                            <div class="form_control phone">
+                                <label for="memberphone">휴대폰 번호 <span>*</span></label>
+                                <input type="text" id="memberphone" name="memberphone"
+                                    placeholder="휴대폰 번호를 입력해주세요. (예시 : 010-1234-5678)">
+                                <span class="error_msg"></span>
+                            </div>
+                        </div>
+                        <div class="info emailWrap">
+                            <div class="form_control email">
+                                <label for="memberemail">이메일 주소 <span>*</span></label>
+                                <input type="text" id="memberemail" name="memberemail"
+                                    placeholder="이메일 주소를 입력해주세요. (예시 : paulbassett@google.com)">
+                                <span class="error_msg"></span>
+                            </div>
+                        </div>
+                        <div class="privacyWrap">
+                            <h3>폴 바셋 이용약관</h3>
+                            <div class="policy01">
+                                폴 바셋 소사이어티 이용약관<br/><br/>
+
+                                엠즈씨드(폴 바셋)는 고객님을 보호합니다.<br/>
+
+                                (주)엠즈씨드의 서비스의 이용과 관련하여 필요한 사항을 규정합니다.<br/><br/>
+
+                                제1장 총칙<br/><br/>
+
+                                1. 목적<br/><br/>
+
+                                가. (주)엠즈씨드(이하 "회사"라고 칭함)에서 운영하는 사이트는 아래와 같은 약관에 동의하는 이용자들에게 제공되는 인터넷서비스로 이용자와 회사의 권리 및
+                                의무를 규정함을 목적으로 합니다.<br/>
+
+                                나. 이용자는 회사가 정한 소정의 등록절차를 걸쳐 '회원 가입' 버튼을 클릭하면 이 약관과 함께 이에 동의하는 것으로 간주합니다.<br/>
+
+                                다. 본 사이트 (홈페이지, 모바일 어플리케이션) 의 모든 자료는 회사 및 혹은 회사에 의해 자격을 취득한 기타 이해 관계자에 의한 저작권, 등록의장,
+                                등록상표 또는 기타 지적소유권으로 보호되고 있습니다.<br/>
+
+                                라. 본 사이트에 포함된 자료는 정보목적으로만 제공됩니다. 귀하는 본 사이트의 내용에 대하여 어떤 방법으로도 배포, 출판, 전송, 변경, 전시, 모방 작품의
+                                창조 혹은 개발하지 않을 것에 동의하는 것으로 간주되며, 회사의 권한을 보호하고 옹호함은 물론 본 사이트의 자료를 허가 없이 유용함으로써 발생할 수 있는
+                                어떠한 손해도 입히지 않아야 합니다. 허가 없이 사이트의 내용을 유용하는 경우에는 회사에 돌이킬 수 없는 손해를 입힐 수도 있다는 사실을 인지하시기 바랍니다.
+                                이와 같이 인가되지 않은 유용 사실에 대하여 회사는 법적, 재정적으로 가능한 기타 추가적인 배상과 관련한 권한을 가지고 있습니다. 피드백 및 제출자로. 귀하가
+                                제출하는 자료의 내용에 대한 책임은 전적으로 귀하에게 있습니다. 제출자료에 불법, 중상모략, 비난 혹은 비도덕적인 내용이 포함되어서는 안됩니다. 사이트에
+                                저작권, 등록 상표권, 사 생활권 혹은 기타 사적 권리 혹은 소유권을 포함하는 제3자의 권리를 침해하는 어떤 자료도 게시하여서는 안됩니다.<br/>
+
+                                마. 이용자의 개인정보 보호 및 보안, 개인정보에 대한 수집, 이용 및 저장과 관련한 관행 및 정책에 대하여는 회사의 개인정보처리방침에 의합니다.
+                                개인정보처리방침은 홈페이지에 별도 게시하고 있습니다.<br/><br/>
+
+                                2. 약관의 수정<br/><br/>
+
+                                가. 회사는 약관을 변경할 수 있으며 변경된 약관은 회원에게 화면을 통한 공지 등의 방법으로 공지함으로 효력을 발생합니다.<br/>
+
+                                3. “이용자”의 정의<br/>
+
+
+                                가. "이용자”란 회사 홈페이지에 접속하여 본 약관에 따라 회사 인터넷 회원으로 가입하여 회사 홈페이지가 제공하는 서비스를 받는 자를 말합니다.<br/>
+
+                                나. 회원가입을 완료하면 일반 회원으로 간주하며 Welcome일반회원 자격이 주어 집니다. 고객이 소지한 Paul Bassett Card를 등록하면 “Paul
+                                Bassett 등급 회원”이 됩니다. 본 약관에서 별도로 정한 사항이 없다면, “Paul Bassett 등급 회원”으로서의 권한 및 이용과 관련한 규정은
+                                “Paul Bassett Card 이용약관”에 따릅니다. 다. 본 약관과 Paul Bassett 카드 이용약관의 내용상 충돌이 있을 경우 Paul
+                                Bassett Card 이용약관이 우선합니다.<br/>
+
+                                제 2장 회원 관리 및 서비스<br/><br/>
+
+                                1. 회원 ID와 비밀번호<br/><br/>
+
+                                회원 가입은 무료이며, 회원ID(회원 번호)와 비밀번호(Password)에 관한 모든 관리 책임은 다 회원에게 있습니다.<br/>
+                                다만, 14세 미만 자는 회원으로 가입할 수 없습니다.<br/>
+                                회원ID(계정)는 1인당 1개의 ID만 생성 및 등록이 가능하며, ID생성을 위해 필요한 개인정보를 허위로 제공하거나, 본인이 아닌 타인의 정보를 무단으로
+                                사용하여 회원ID를 만들 수 없습니다.<br/>
+
+                                이를 위반할 경우, 회원에게 제공되는 서비스의 제한이 있을 수 있으며, 본 약관 각 조항에서 정하고 있는 불이익을 받을 수 있습니다.<br/>
+
+                                회원가입 시, e-Stamp 바코드가 회원계정으로 발급되며, e-Stamp 이벤트 기간일 경우 해당 바코드를 확인할 수 있으며, e-Stamp 프로모션 이벤트
+                                참여가 가능합니다.<br/>
+
+                                이용자에게 부여된 회원 번호(ID) 및 비밀번호의 관리소홀, 부정사용에 의하여 발생하는 모든 결과에 대한 책임은 각각의 회원에게 있습니다.<br/>
+
+                                회원 자신의 ID가 부정하게 사용된 경우 이용자는 반드시 회사에 그 사실을 지체 없이 통보하여 조치를 받아야 하며, 통보의 지연으로 인해 발생하는 부분은
+                                회사가 책임지지 않습니다.<br/>
+                            </div>
+                            <div class="checkWrap01">
+                                <input id="confirm01" type="checkbox">
+                                <label for="confirm01">폴 바셋 이용약관에 동의합니다.</label>
+                            </div>
+                            <h3>폴 바셋 개인정보처리방침</h3>
+                            <div class="policy02">
+                                개인정보처리방침<br /><br />
+
+                                엠즈씨드(주)는 (이하 ‘회사’는) 고객님의 개인정보를 중요시하며, “정보통신망 이용촉진 및 정보보호 등에 관한 법률” 및 “개인정보 보호법 제30조”에 따라
+                                정보 주체의 개인정보를 보호하고 이와 관련된 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리지침을 수립, 공개 합니다.
+                                회사는 개인정보처리방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.<br />
+
+                                본 방침은 2023년 04월 19일부터 시행됩니다.<br /><br/>
+
+                                1. 개인정보의 수집 및 이용목적<br /><br/>
+
+                                회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br />
+
+                                가. 회원 가입 및 관리: 회원제 서비스 이용에 따른 본인확인, 개인 식별, 불량회원의 부정 이용 방지와 비인가 사용 방지, 가입 의사 확인, 연령확인,
+                                불만처리 등 민원처리, 고지사항 전달<br />
+
+                                나. 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산, 콘텐츠 제공, 물품배송 또는 청구지 등 발송<br />
+
+                                다. 마케팅 및 광고에 활용: 신규 서비스(제품) 개발 및 특화, 이벤트 등 광고성 정보 전달, 인구 통계학적 특성에 따른 서비스 제공 및 광고 게재, 접속
+                                빈도 파악 또는 회원의 서비스 이용에 대한 통계<br />
+
+                                라. 기타: 각종 서비스 공지 및 이벤트 홍보 안내를 위한 문자메시지 및 이메일 전달<br />
+
+                                마. 채용 시 수집된 개인정보는 다음의 목적을 위해 활용합니다. (입사전형 진행, 입사지원서 수정, 자격요건의 확인, 합격여부 확인, 지원자와의 원활한
+                                의사소통)<br />
+
+                                2. 수집하는 개인정보의 항목<br /><br/>
+
+                                회사는 이용자에게 본인확인, 크라운 적립 및 결제 서비스, 다양하고 편리한 인터넷 서비스를 제공하기 위해 아래의 방법을 통해 개인정보를 수집하고
+                                있습니다.<br />
+
+                                가. 개인정보 수집항목<br />
+
+                                - 성명, 고유번호(CI), 생년월일, 성별, 아이디, 비밀번호, 주소(선택), 휴대전화번호, E-mail<br />
+
+                                나. 서비스 이용 과정 및 사업 처리과정에서 수집될 수 있는 개인정보의 범위<br />
+
+                                - 서비스 이용 기록, 접속 로그, 쿠키, 접속IP정보, 결제 기록, MAC어드레스, 이용정지 기록<br />
+
+                                단, 쿠키의 경우 구체적인 운영 내역과 설정 거부 방법 등을 본 약관 7조에 정하고 있습니다.<br />
+
+                                다.개인정보의 수집방법<br />
+
+                                - 회사는 이용자가 개인정보보호정책과 이용약관의 각각의 내용에 대해 ‘동의합니다’ 또는 ‘동의하지 않습니다’버튼을 클릭할 수 있는 절차를 마련하여,
+                                ‘동의합니다’버튼을 클릭한 경우 개인정보 수집에 대해 동의한 것으로 봅니다.<br />
+
+                                라. 허위 정보 입력 시 회사의 조치<br />
+
+                                - 고객은 자신의 정보에 대해 정확성 및 적법성을 보장해야 합니다. 만약 이를 위반하여 타인의 정보를 도용하는 등 각종 방법으로 허위 정보를 입력할 경우
+                                회사는 해당 고객을 관계법령에 따라 신고 할 수 있으며 강제 탈퇴를 시킬 수도 있습니다.<br />
+
+                                마. 채용 시 수집정보 안내<br />
+
+                                회사는 입사지원, 입사와 관련된 문의 응답, 취업보호 대상자의 확인을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br />
+
+                                - 필수정보 : 인적사항(성명, 전화번호, 이메일), 민감정보(장애사항,보훈여부)<br />
+
+                                - 선택사항 : 생년월일, 주소, 자기소개서, 이력서, 기타 본인이 직접 입력하거나 첨부파일을 통해서 업로드 하는 비정형적 정보 중 개인식별 가능성이 있는
+                                정보<br />
+
+                                3. 개인정보의 보유 및 이용기간<br /><br/>
+
+                                회사는 회원가입일로부터 서비스를 제공하는 기간 동안에 한하여 이용자의 개인정보를 보유 및 이용하게 됩니다.<br />
+
+                                회사는 회원이 탈퇴를 요청하거나 개인정보의 수집 및 이용에 대한 동의를 철회하는 경우, 수집 및 이용목적이 달성되거나 보유 및 이용기간이 종료한 경우 해당
+                                개인정보를 지체 없이 파기합니다.<br />
+
+                                그리고 내부방침 및 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다.<br />
+                            </div>
+                            <div class="checkWrap02">
+                                <input id="confirm02" type="checkbox">
+                                <label for="confirm02">폴 바셋 개인정보처리방침에 동의합니다.</label>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button class="joinBtn" type="submit" disabled>회원가입 완료</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include("footerSub")%>

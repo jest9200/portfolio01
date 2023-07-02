@@ -38,11 +38,19 @@
         </ul>
         <div class="subWrap">
             <ul class="subTop">
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="/util_menu/qna">문의하기</a></li>
+                <% if (login) { %>
+                    <li><a href="/mypage"><%- login.memberid %> 님</a></li>
+                    <li><a href="/logout">로그아웃</a></li>
+                <% } else { %>
+                    <li><a href="/login">로그인</a></li>
+                    <li><a href="/join">회원가입</a></li>
+                <% } %>
+                <% if (login) { %>
+                    <li><a href="/util_menu/qna">문의하기</a></li>
+                <% } else { %>
+                    <li><a href="/needlogin">문의하기</a></li>
+                <% } %>
                 <li><a href="/util_menu/recruit">채용</a></li>
-                <li><a href="/util_menu/faq">FAQ</a></li>
             </ul>
             <ul class="subBot">
                 <li><a href="/util_menu/contactus"><i class="fa-solid fa-house"></i><span>신규입점제의</span></a></li>
@@ -54,15 +62,23 @@
     <div class="hamSideMenu">
         <h2>PaulBassett Utility</h2>
         <ul>
-            <li><a href="util_menu.html">문의하기</a></li>
-            <li><a href="util_menu.html">채용안내</a></li>
-            <li><a href="util_menu.html">FAQ</a></li>
-            <li><a href="util_menu.html">신규입점안내</a></li>
-            <li><a href="util_menu.html">납품문의</a></li>
+            <% if (login) { %>
+                <li><a href="/util_menu/qna">문의하기</a></li>
+            <% } else { %>
+                <li><a href="/needlogin">문의하기</a></li>
+            <% } %>
+            <li><a href="/util_menu/recruit">채용안내</a></li>
+            <li><a href="/util_menu/contactus">신규입점안내</a></li>
+            <li><a href="/util_menu/coffeebeans">납품문의</a></li>
         </ul>
         <div>
-            <a href="#">로그인</a>
-            <a href="#">회원가입</a>
+            <% if (login) { %>
+                <a href="/mypage"><%- login.memberid %> 님</a>
+                <a href="/logout">로그아웃</a>
+            <% } else { %>
+                <a href="/login">로그인</a>
+                <a href="/join">회원가입</a>
+            <% } %>
         </div>
         <a class="close" href="#"><i class="fa-solid fa-xmark"></i></a>
     </div>
@@ -111,7 +127,6 @@
                 <a href="/whatsnew/event">WHAT'S NEW</a>
                 <ul class="depth2">
                     <li><a href="/whatsnew/event">Event/News</a></li>
-                    <li><a href="/whatsnew/notice">Notice</a></li>
                 </ul>
             </li>
             <li>
@@ -123,11 +138,19 @@
         </ul>
         <div class="subWrap">
             <ul class="subTop">
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="/util_menu/qna">문의하기</a></li>
+                <% if (login) { %>
+                    <li><a href="/mypage"><%- login.memberid %> 님</a></li>
+                    <li><a href="/logout">로그아웃</a></li>
+                <% } else { %>
+                    <li><a href="/login">로그인</a></li>
+                    <li><a href="/join">회원가입</a></li>
+                <% } %>
+                <% if (login) { %>
+                    <li><a href="/util_menu/qna">문의하기</a></li>
+                <% } else { %>
+                    <li><a href="/needlogin">문의하기</a></li>
+                <% } %>
                 <li><a href="/util_menu/recruit">채용</a></li>
-                <li><a href="/util_menu/faq">FAQ</a></li>
             </ul>
             <ul class="subBot">
                 <li><a href="/util_menu/contactus"><i class="fa-solid fa-house"></i><span>신규입점제의</span></a></li>
@@ -139,15 +162,23 @@
     <div class="hamSideMenu">
         <h2>PaulBassett Utility</h2>
         <ul>
-            <li><a href="/util_menu/qna">문의하기</a></li>
+            <% if (login) { %>
+                <li><a href="/util_menu/qna">문의하기</a></li>
+            <% } else { %>
+                <li><a href="/needlogin">문의하기</a></li>
+            <% } %>
             <li><a href="/util_menu/recruit">채용안내</a></li>
-            <li><a href="/util_menu/faq">FAQ</a></li>
             <li><a href="/util_menu/contactus">신규입점안내</a></li>
             <li><a href="/util_menu/coffeebeans">납품문의</a></li>
         </ul>
         <div>
-            <a href="#">로그인</a>
-            <a href="#">회원가입</a>
+            <% if (login) { %>
+                <a href="/mypage"><%- login.memberid %> 님</a>
+                <a href="/logout">로그아웃</a>
+            <% } else { %>
+                <a href="/login">로그인</a>
+                <a href="/join">회원가입</a>
+            <% } %>
         </div>
         <a class="close" href="#"><i class="fa-solid fa-xmark"></i></a>
     </div>

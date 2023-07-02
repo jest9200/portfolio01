@@ -236,6 +236,91 @@ button {
   color: #987346;
 }
 
+#footer {
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  height: 200px;
+}
+#footer .center {
+  width: 1600px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .center .leftWrap .footerMenu {
+  display: flex;
+  padding-bottom: 20px;
+}
+#footer .center .leftWrap .footerMenu li {
+  margin-right: 25px;
+}
+#footer .center .leftWrap .footerMenu li a {
+  font-size: 15px;
+  color: #ddd;
+  transition: all 0.5s;
+}
+#footer .center .leftWrap .footerMenu li a::after {
+  content: "";
+  display: block;
+  background-color: #ddd;
+  width: 0%;
+  height: 2px;
+  margin-top: 4px;
+  transition: all 0.5s;
+}
+#footer .center .leftWrap .footerMenu li:hover a {
+  color: #fff;
+}
+#footer .center .leftWrap .footerMenu li:hover a::after {
+  width: 100%;
+}
+#footer .center .leftWrap .info {
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+  padding-bottom: 10px;
+}
+#footer .center .leftWrap .copyright {
+  font-size: 15px;
+  color: #7e7e7e;
+}
+#footer .center .rightWrap {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+#footer .center .rightWrap .sns {
+  display: flex;
+}
+#footer .center .rightWrap .sns li {
+  margin-left: 20px;
+}
+#footer .center .rightWrap .sns li a {
+  font-size: 25px;
+  color: #aaa;
+  transition: all 0.5s;
+}
+#footer .center .rightWrap .sns li a:hover {
+  color: #fff;
+}
+#footer .center .rightWrap .imgWrap {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+#footer .center .rightWrap .imgWrap .img01 {
+  width: 60px;
+  height: 60px;
+}
+#footer .center .rightWrap .imgWrap .img02 {
+  width: 174px;
+  height: 46px;
+  margin-left: 20px;
+}
+
 #container .cont1 {
   width: 100%;
   height: 530px;
@@ -272,13 +357,13 @@ button {
   border-bottom: 1px solid #ddd;
 }
 #container .cont2 .center {
-  width: 1000px;
+  width: 62.5%;
 }
 #container .cont2 .center .menus {
   display: flex;
 }
 #container .cont2 .center .menus li {
-  width: 20%;
+  width: 25%;
 }
 #container .cont2 .center .menus li a {
   display: flex;
@@ -298,85 +383,6 @@ button {
 }
 #container .cont3 .view {
   width: 100%;
-}
-#container .cont3 .view.faq .top {
-  width: 100%;
-  height: 333px;
-  background-image: url(../img/util_menu/tab01Bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#container .cont3 .view.faq .top .title {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-}
-#container .cont3 .view.faq .top .title h2 {
-  font-size: 40px;
-  font-weight: 400;
-  color: #fff;
-  padding: 25px 0;
-}
-#container .cont3 .view.faq .top .title h3 {
-  font-size: 18px;
-  font-weight: 400;
-  color: #ddd;
-}
-#container .cont3 .view.faq .bot {
-  display: flex;
-  justify-content: center;
-  font-family: "Noto Sans KR", sans-serif;
-  padding: 70px 0;
-  background-color: #382e2c;
-}
-#container .cont3 .view.faq .bot .center {
-  width: 1000px;
-}
-#container .cont3 .view.faq .bot .center .question {
-  width: 100%;
-  height: 50px;
-  background-color: #62605f;
-  margin-bottom: 15px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  padding: 0 20px;
-  position: relative;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-#container .cont3 .view.faq .bot .center .question span {
-  color: #f0dec8;
-  font-family: "Poppins", sans-serif;
-  padding-right: 15px;
-  font-size: 25px;
-  font-weight: 500;
-  transition: all 0.5s;
-}
-#container .cont3 .view.faq .bot .center .question::after {
-  content: "+";
-  display: block;
-  color: #f0dec8;
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  transition: all 0.5s;
-}
-#container .cont3 .view.faq .bot .center .question:hover {
-  background-color: #fff;
-  color: #382e2c;
-}
-#container .cont3 .view.faq .bot .center .question:hover span {
-  color: #382e2c;
-}
-#container .cont3 .view.faq .bot .center .question:hover::after {
-  color: #EA094B;
 }
 #container .cont3 .view.qna .top {
   width: 100%;
@@ -532,7 +538,6 @@ button {
   background-color: #382e2c;
   color: #f0dec8;
   transition: all 0.5s;
-  cursor: pointer;
 }
 #container .cont3 .view.recruit .bot .center ul li:nth-child(4)::before {
   background-position: -434px 0;
@@ -762,89 +767,4 @@ button {
   font-size: 15px;
   line-height: 25px;
   font-weight: 300;
-}
-
-#footer {
-  background-color: #191919;
-  display: flex;
-  justify-content: center;
-  font-family: "Poppins", sans-serif;
-  height: 200px;
-}
-#footer .center {
-  width: 1600px;
-  height: 200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#footer .center .leftWrap .footerMenu {
-  display: flex;
-  padding-bottom: 20px;
-}
-#footer .center .leftWrap .footerMenu li {
-  margin-right: 25px;
-}
-#footer .center .leftWrap .footerMenu li a {
-  font-size: 15px;
-  color: #ddd;
-  transition: all 0.5s;
-}
-#footer .center .leftWrap .footerMenu li a::after {
-  content: "";
-  display: block;
-  background-color: #ddd;
-  width: 0%;
-  height: 2px;
-  margin-top: 4px;
-  transition: all 0.5s;
-}
-#footer .center .leftWrap .footerMenu li:hover a {
-  color: #fff;
-}
-#footer .center .leftWrap .footerMenu li:hover a::after {
-  width: 100%;
-}
-#footer .center .leftWrap .info {
-  font-size: 15px;
-  line-height: 25px;
-  color: #959595;
-  padding-bottom: 10px;
-}
-#footer .center .leftWrap .copyright {
-  font-size: 15px;
-  color: #7e7e7e;
-}
-#footer .center .rightWrap {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-}
-#footer .center .rightWrap .sns {
-  display: flex;
-}
-#footer .center .rightWrap .sns li {
-  margin-left: 20px;
-}
-#footer .center .rightWrap .sns li a {
-  font-size: 25px;
-  color: #aaa;
-  transition: all 0.5s;
-}
-#footer .center .rightWrap .sns li a:hover {
-  color: #fff;
-}
-#footer .center .rightWrap .imgWrap {
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
-}
-#footer .center .rightWrap .imgWrap .img01 {
-  width: 60px;
-  height: 60px;
-}
-#footer .center .rightWrap .imgWrap .img02 {
-  width: 174px;
-  height: 46px;
-  margin-left: 20px;
 }

@@ -1,0 +1,142 @@
+@import "reset";
+@import "commonHF";
+
+#container {
+    font-family: 'Noto Sans KR', sans-serif;
+    .cont1 {
+        height: 98px;
+        background-color: #111;
+    }
+    .cont2 {
+        padding: 100px 0;
+        display: flex;
+        justify-content: center;
+        .center {
+            width: 62.5%;
+            h2 {
+                font-size: 40px;
+                text-align: center;
+            }
+            p {
+                font-size: 17px;
+                text-align: center;
+                margin: 20px 0 100px;
+            }
+            .formWrap {
+                form {
+                    .info {
+                        &:nth-child(1) {
+                            .form_control {
+                                border-top: 1px solid #222;
+                            }
+                        }
+                        &:nth-child(7) {
+                            .form_control {
+                                border-bottom: 1px solid #222;
+                            }
+                        }
+                        .form_control {
+                            display: flex;
+                            align-items: center;
+                            border-bottom: 1px solid #ccc;
+                            label {
+                                width: 20%;
+                                padding: 30px;
+                                padding-right: 0;
+                                background-color: #f9f9f9;
+                                span {
+                                    color: #EA094B;
+                                }
+                            }
+                            input {
+                                width: 40%;
+                                padding: 10px;
+                                margin-left: 20px;
+                                border: 1px solid #ddd;
+                                font-family: 'Noto Sans KR', sans-serif;
+                                font-weight: 300;
+                            }
+                            .error_msg {
+                                display: none;
+                                width: 25%;
+                                color: #EA094B;
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin-top: 5px;
+                                padding-left: 20px;
+                            }
+                        }
+                        .form_control.ok {
+                            input {
+                                border: 1px solid #ddd;
+                            }
+                            .error_msg {
+                                display: none;
+                            }
+                        }
+                        .form_control.no {
+                            input {
+                                border: 1px solid #EA094B;
+                            }
+                            .error_msg {
+                                display: block;
+                            }
+                        }
+                    }
+                    .privacyWrap {
+                        margin-top: 50px;
+                        h3 {
+                            font-size: 18px;
+                            font-weight: 500;
+                            margin: 20px 0;
+                        }
+                        .policy01, .policy02 {
+                            height: 200px;
+                            overflow: auto;
+                            background-color: #f9f9f9;
+                            padding: 50px;
+                            font-size: 15px;
+                            line-height: 20px;
+                            font-weight: 300;
+                            border: 1px solid #ddd;
+                        }
+                        .checkWrap01,.checkWrap02 {
+                            margin-top: 15px;
+                            margin-bottom: 50px;
+                            display: flex;
+                            justify-content: end;
+                            align-items: center;
+                            label {
+                                font-size: 15px;
+                                font-weight: 300;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                    .btn {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 100px;
+                        .joinBtn {
+                            border: 1px solid #222;
+                            background-color: #222;
+                            color: #fff;
+                            width: 300px;
+                            padding: 15px;
+                            cursor: pointer;
+                            font-family: 'Noto Sans KR', sans-serif;
+                            font-size: 16px;
+                            transition: all .5s;
+                            &:disabled {
+                                border: 1px solid #ddd;
+                                background-color: #ddd;
+                                color: #bbb;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

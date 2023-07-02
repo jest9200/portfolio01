@@ -1,0 +1,87 @@
+@import "reset";
+@import "commonHF";
+
+#container {
+    font-family: 'Noto Sans KR', sans-serif;
+    .cont1 {
+        height: 98px;
+        background-color: #111;
+    }
+    .cont2 {
+        display: flex;
+        justify-content: center;
+        padding: 100px 0;
+        background-color: #222;
+        .center {
+            width: 62.5%;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            .imgWrap {
+                width: 33.333333%;
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+            .textWrap {
+                width: 66.666666%;
+                h2 {
+                    text-align: center;
+                    font-size: 30px;
+                    padding-top: 50px;
+                    font-family: 'Poppins', sans-serif;
+                    color: #222;
+                }
+                > p {
+                    text-align: center;
+                    padding: 10px 0 30px;
+                }
+                .infoWrap {
+                    .info {
+                        width: 500px;
+                        margin: 0px auto;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 20px 0;
+                        border-bottom: 1px solid #ddd;
+                        .leftWrap {
+                            h4 {
+                                font-size: 16px;
+                                font-weight: 600;
+                            }
+                        }
+                        .rightWrap {
+                            p {
+                                font-size: 16px;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+                .linkWrap {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 200px;
+                        height: 50px;
+                        background-color: #222;
+                        border: 1px solid #222;
+                        color: #fff;
+                        transition: all .5s;
+                        &:hover {
+                            border: 1px solid #EA094B;
+                            background-color: #fff;
+                            color: #EA094B;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

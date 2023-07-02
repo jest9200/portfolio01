@@ -1,0 +1,93 @@
+@import "reset";
+@import "commonHF";
+
+#container {
+    font-family: 'Noto Sans KR', sans-serif;
+    .cont1 {
+        height: 98px;
+        background-color: #111;
+    }
+    .cont2 {
+        display: flex;
+        justify-content: center;
+        padding: 150px 0;
+        .center {
+            width: 550px;
+            h2 {
+                text-align: center;
+                font-size: 40px;
+                padding: 40px 0 20px;
+            }
+            >p{
+                font-size: 17px;
+                text-align: center;
+                padding-bottom: 40px;
+            }
+            .loginWrap {
+                form {
+                    border-top: 1px solid #222;
+                    border-bottom: 1px solid #222;
+                    .line01 {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 20px 30px;
+                        .leftWrap {
+                            .idWrap,
+                            .passWrap {
+                                margin: 10px 0;
+                                input {
+                                    width: 280px;
+                                    padding: 15px;
+                                    border: 1px solid #bbb;
+                                }
+                            }
+                        }
+                        .rightWrap {
+                            .btnWrap {
+                                button {
+                                    width: 150px;
+                                    height: 108px;
+                                    border: none;
+                                    background-color: #222;
+                                    color: #fff;
+                                    cursor: pointer;
+                                    transition: all .5s;
+                                    &:disabled {
+                                        background-color: #ddd;
+                                        color: #bbb;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .line02 {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 20px 30px;
+                        border-top: 1px solid #ddd;
+                        .textWrap {
+                            p {
+                                font-size: 14px;
+                                margin-bottom: 5px;
+                                color: #222;
+                            }
+                        }
+                        .linkWrap {
+                            a {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 150px;
+                                height: 50px;
+                                background-color: #EA094B;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+<%- include("headerSub", {title:"Login | PaulBassett", cssFiles:["login.css"], jsFiles:[]})%>
+    <div id="container">
+        <div class="cont1"></div>
+        <div class="cont2">
+            <div class="center">
+                <h2>폴 바셋 로그인</h2>
+                <p>폴 바셋 회원 서비스 이용을 위해 로그인 해주세요.</p>
+                <div class="loginWrap">
+                    <form id="login_form" action="/logincheck" method="post">
+                        <div class="line01">
+                            <div class="leftWrap">
+                                <div class="idWrap">
+                                    <input id="userId" type="text" name="memberid" placeholder="아이디">
+                                </div>
+                                <div class="passWrap">
+                                    <input id="userPw" type="password" name="memberpass" placeholder="비밀번호">
+                                </div>
+                            </div>
+                            <div class="rightWrap">
+                                <div class="btnWrap">
+                                    <button type="submit" disabled>로그인</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line02">
+                            <div class="textWrap">
+                                <p>아직 Paul Bassett Society 회원이 아니신가요?</p>
+                                <p>지금 가입하시고 Exclusive Benefits으로 돌려받으세요</p>
+                            </div>
+                            <div class="linkWrap">
+                                <a href="/join">회원가입</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const btnWrapBtn = document.querySelector(".btnWrap button");
+        const idWrap = document.querySelector(".idWrap input");
+        const passWrap = document.querySelector(".passWrap input");
+        const inputTags = document.querySelectorAll("form input");
+
+        // 로그인버튼 활성화 비활성화(아이디/비번 작성유무에 따라)
+        for(let i=0; i<inputTags.length; i++){
+            inputTags[i].addEventListener("keyup",()=>{
+                if(idWrap.value === "" || passWrap.value === ""){
+                    btnWrapBtn.disabled = true;
+                } else {
+                    btnWrapBtn.disabled = false;
+                }
+            })
+        }
+
+        btnWrapBtn.onclick = function(e){
+            axios.post('/user', {
+            memberid: idWrap.value,
+            memberpass: passWrap.value
+            })
+            .then(function (response) {
+            e.preventDefault();
+            console.log(response);
+            alert("아이디 / 비밀번호가 잘못되었습니다.");
+            })
+            .catch(function (error) {
+            console.log(error);
+            });
+        }
+    </script>
+    <%- include("footerSub")%>

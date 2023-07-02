@@ -236,6 +236,91 @@ button {
   color: #987346;
 }
 
+#footer {
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  height: 200px;
+}
+#footer .center {
+  width: 1600px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .center .leftWrap .footerMenu {
+  display: flex;
+  padding-bottom: 20px;
+}
+#footer .center .leftWrap .footerMenu li {
+  margin-right: 25px;
+}
+#footer .center .leftWrap .footerMenu li a {
+  font-size: 15px;
+  color: #ddd;
+  transition: all 0.5s;
+}
+#footer .center .leftWrap .footerMenu li a::after {
+  content: "";
+  display: block;
+  background-color: #ddd;
+  width: 0%;
+  height: 2px;
+  margin-top: 4px;
+  transition: all 0.5s;
+}
+#footer .center .leftWrap .footerMenu li:hover a {
+  color: #fff;
+}
+#footer .center .leftWrap .footerMenu li:hover a::after {
+  width: 100%;
+}
+#footer .center .leftWrap .info {
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+  padding-bottom: 10px;
+}
+#footer .center .leftWrap .copyright {
+  font-size: 15px;
+  color: #7e7e7e;
+}
+#footer .center .rightWrap {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+#footer .center .rightWrap .sns {
+  display: flex;
+}
+#footer .center .rightWrap .sns li {
+  margin-left: 20px;
+}
+#footer .center .rightWrap .sns li a {
+  font-size: 25px;
+  color: #aaa;
+  transition: all 0.5s;
+}
+#footer .center .rightWrap .sns li a:hover {
+  color: #fff;
+}
+#footer .center .rightWrap .imgWrap {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+#footer .center .rightWrap .imgWrap .img01 {
+  width: 60px;
+  height: 60px;
+}
+#footer .center .rightWrap .imgWrap .img02 {
+  width: 174px;
+  height: 46px;
+  margin-left: 20px;
+}
+
 #container.new .cont1 {
   width: 100%;
   height: 333px;
@@ -1010,89 +1095,4 @@ button {
 #container.product .cont2 .productWrap .center .box span {
   font-size: 15px;
   color: #987346;
-}
-
-#footer {
-  background-color: #191919;
-  display: flex;
-  justify-content: center;
-  font-family: "Poppins", sans-serif;
-  height: 200px;
-}
-#footer .center {
-  width: 1600px;
-  height: 200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#footer .center .leftWrap .footerMenu {
-  display: flex;
-  padding-bottom: 20px;
-}
-#footer .center .leftWrap .footerMenu li {
-  margin-right: 25px;
-}
-#footer .center .leftWrap .footerMenu li a {
-  font-size: 15px;
-  color: #ddd;
-  transition: all 0.5s;
-}
-#footer .center .leftWrap .footerMenu li a::after {
-  content: "";
-  display: block;
-  background-color: #ddd;
-  width: 0%;
-  height: 2px;
-  margin-top: 4px;
-  transition: all 0.5s;
-}
-#footer .center .leftWrap .footerMenu li:hover a {
-  color: #fff;
-}
-#footer .center .leftWrap .footerMenu li:hover a::after {
-  width: 100%;
-}
-#footer .center .leftWrap .info {
-  font-size: 15px;
-  line-height: 25px;
-  color: #959595;
-  padding-bottom: 10px;
-}
-#footer .center .leftWrap .copyright {
-  font-size: 15px;
-  color: #7e7e7e;
-}
-#footer .center .rightWrap {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-}
-#footer .center .rightWrap .sns {
-  display: flex;
-}
-#footer .center .rightWrap .sns li {
-  margin-left: 20px;
-}
-#footer .center .rightWrap .sns li a {
-  font-size: 25px;
-  color: #aaa;
-  transition: all 0.5s;
-}
-#footer .center .rightWrap .sns li a:hover {
-  color: #fff;
-}
-#footer .center .rightWrap .imgWrap {
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
-}
-#footer .center .rightWrap .imgWrap .img01 {
-  width: 60px;
-  height: 60px;
-}
-#footer .center .rightWrap .imgWrap .img02 {
-  width: 174px;
-  height: 46px;
-  margin-left: 20px;
 }
