@@ -1,0 +1,76 @@
+<%- include("headerSub", {title:"Qna | PaulBassett", cssFiles:["brd_list.css"], jsFiles:[]})%>
+    <div id="container">
+        <div class="cont1"></div>
+        <div class="cont2">
+            <div class="center">
+                <h2>Questions and Answers</h2>
+                <h3>폴바셋 문의사항 고객센터입니다.</h3>
+                <div class="listWrap">
+                    <% for( let i=0; i<data.length; i++ ) { %>
+                        <a href="/board/detail/<%- data[i].num %>" class="list">
+                            <div class="textWrap">
+                                <h5>Q</h5>
+                                <p><%- data[i].title %></p>
+                            </div>
+                        </a>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+        <div class="cont3">
+            <div class="center">
+                <!-- 페이징 번호 생성된 구간  처음 이전 1,2,3 다음 마지막-->
+                <% if(text === "") { %>
+                    <ul class="paging">
+                        <!-- 이전버튼 생성작업 -->
+                        <% if (blockStart > totalBlock) { %>
+                            <li><a href="?page=<%- blockStart - 1 %>">prev</a></li>
+                        <% } %>
+
+                        <!-- 페이지 시작번호값서부터 끝 번호까지 li태그 생성 -->
+                        <% for( let i=blockStart; i<=blockEnd; i++) { %>
+                            <!-- 현재 보고있는 페이지 번호인 경우 색상 활성화 -->
+                            <% if (pageNumber == i) { %>
+                                <li class="highlight"><a href="?page=<%- i %>"><%- i %></a></li>
+                            <% } else { %>
+                                <li><a href="?page=<%- i %>"><%- i %></a></li>
+                            <% } %>
+                        <% } %>
+
+                        <!-- 다음버튼 생성작업 -->
+                        <% if (blockNum < totalBlock) { %>
+                            <li><a href="?page=<%- blockEnd + 1 %>">next</a></li>
+                        <% } %>
+                    </ul>
+                <% } else {%>
+                    <ul class="paging">
+                        <!-- 이전버튼 생성작업 -->
+                        <% if (blockStart > totalBlock) { %>
+                            <!-- localhost:3000/notice/search?page=2&search=서버에서보내준값select&inputText=text-->
+                            <li><a href="?page=<%- blockStart - 1 %>&search=<%- select %>&inputText=<%- text %>">prev</a></li>
+                        <% } %>
+    
+                        <!-- 페이지 시작번호값서부터 끝 번호까지 li태그 생성 -->
+                        <% for( let i=blockStart; i<=blockEnd; i++) { %>
+                            <!-- 현재 보고있는 페이지 번호인 경우 색상 활성화 -->
+                            <% if (pageNumber == i) { %>
+                                <li class="highlight"><a href="?page=<%- i %>&search=<%- select %>&inputText=<%- text %>"><%- i %></a></li>
+                            <% } else { %>
+                                <li><a href="?page=<%- i %>&search=<%- select %>&inputText=<%- text %>"><%- i %></a></li>
+                            <% } %>
+                        <% } %>
+    
+                        <!-- 다음버튼 생성작업 -->
+                        <% if (blockNum < totalBlock) { %>
+                            <li><a href="?page=<%- blockEnd + 1 %>&search=<%- select %>&inputText=<%- text %>">next</a></li>
+                        <% } %>
+                    </ul>
+                <% } %>
+                <div class="linkWrap">
+                    <a href="/">메인페이지로</a>
+                    <a href="/board/insert">글쓰기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include("footerSub")%>

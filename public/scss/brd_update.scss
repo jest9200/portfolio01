@@ -1,0 +1,124 @@
+@import "reset";
+@import "commonHF";
+
+#container {
+    font-family: 'Noto Sans KR', sans-serif;
+    .cont1 {
+        height: 98px;
+        background-color: #111;
+    }
+    .cont2 {
+        display: flex;
+        justify-content: center;
+        padding: 100px 0;
+        .center {
+            width: 62.5%;
+            background-color: #f1f2f3;
+            .titleWrap {
+                padding: 50px;
+                text-align: center;
+                h2 {
+                    font-size: 40px;
+                    color: #EA094B;
+                    padding-bottom: 15px;
+                    font-family: 'Poppins', sans-serif;
+                }
+                p {
+                    font-size: 16px;
+                    color: #111;
+                }
+            }
+            form {
+                padding: 0 50px 50px;
+                .line01 {
+                    width: 95%;
+                    margin-bottom: 20px;
+                    input {
+                        width: 100%;
+                        padding: 20px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        border: none;
+                        font-size: 16px;
+                    }
+                }
+                .line02 {
+                    width: 95%;
+                    textarea {
+                        width: 100%;
+                        height: 400px;
+                        padding: 20px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        border: none;
+                        resize: none;
+                        outline: none;
+                        font-size: 16px;
+                        white-space: pre-wrap;
+                    }
+                }
+                .adminWrap {
+                    margin-top: 50px;
+                    width: 95%;
+                    input {
+                        width: 100%;
+                        padding: 20px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        border: none;
+                        font-size: 16px;
+                    }
+                    textarea {
+                        display: block;
+                        margin-top: 20px;
+                        width: 100%;
+                        height: 400px;
+                        padding: 20px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        border: none;
+                        resize: none;
+                        outline: none;
+                        font-size: 16px;
+                        white-space: pre-wrap;
+                    }
+                }
+                .btnWrap {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 50px;
+                    button {
+                        border: 1px solid #111;
+                        background-color: #111;
+                        color: #fff;
+                        width: 200px;
+                        height: 50px;
+                        transition: all .5s;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-size: 16px;
+                        cursor: pointer;
+                        margin-right: 10px;
+                        &:hover {
+                            background-color: #fff;
+                            border: 1px solid #EA094B;
+                            color: #EA094B;
+                        }
+                    }
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #111;
+                        color: #fff;
+                        width: 198px;
+                        height: 48px;
+                        border: 1px solid #111;
+                        transition: all .5s;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        &:hover {
+                            background-color: #fff;
+                            border: 1px solid #EA094B;
+                            color: #EA094B;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

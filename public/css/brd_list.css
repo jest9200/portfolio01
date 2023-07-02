@@ -331,73 +331,101 @@ button {
 #container .cont2 {
   display: flex;
   justify-content: center;
-  padding: 150px 0;
+  background-color: #fff;
+  padding-top: 100px;
 }
 #container .cont2 .center {
-  width: 550px;
+  width: 62.5%;
+  background-color: #f1f2f3;
 }
 #container .cont2 .center h2 {
   text-align: center;
   font-size: 40px;
-  padding: 40px 0 20px;
+  padding: 50px 0 10px;
+  font-family: "Poppins", sans-serif;
+  color: #EA094B;
 }
-#container .cont2 .center > p {
-  font-size: 17px;
+#container .cont2 .center h3 {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
-#container .cont2 .center .loginWrap form {
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
-}
-#container .cont2 .center .loginWrap form .line01 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 30px;
-}
-#container .cont2 .center .loginWrap form .line01 .leftWrap .idWrap,
-#container .cont2 .center .loginWrap form .line01 .leftWrap .passWrap {
-  margin: 10px 0;
-}
-#container .cont2 .center .loginWrap form .line01 .leftWrap .idWrap input,
-#container .cont2 .center .loginWrap form .line01 .leftWrap .passWrap input {
-  width: 280px;
-  padding: 15px;
-  border: 1px solid #bbb;
-}
-#container .cont2 .center .loginWrap form .line01 .rightWrap .btnWrap button {
-  width: 150px;
-  height: 108px;
-  border: none;
-  background-color: #222;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-#container .cont2 .center .loginWrap form .line01 .rightWrap .btnWrap button:disabled {
-  background-color: #ddd;
-  color: #bbb;
-}
-#container .cont2 .center .loginWrap form .line02 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 30px;
-  border-top: 1px solid #ddd;
-}
-#container .cont2 .center .loginWrap form .line02 .textWrap p {
-  font-size: 14px;
-  margin-bottom: 5px;
-  color: #222;
-}
-#container .cont2 .center .loginWrap form .line02 .linkWrap a {
+#container .cont2 .center .listWrap .list {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 50px;
-  background-color: #EA094B;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px 0;
+  border: 1px solid #111;
+  background-color: #111;
   color: #fff;
+  transition: all 0.5s;
+}
+#container .cont2 .center .listWrap .list .textWrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+#container .cont2 .center .listWrap .list .textWrap h5 {
+  font-family: "Poppins", sans-serif;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+#container .cont2 .center .listWrap .list .textWrap p {
+  line-height: 25px;
+}
+#container .cont2 .center .listWrap .list:hover {
+  border: 1px solid #EA094B;
+  background-color: #fff;
+  color: #EA094B;
+}
+#container .cont3 {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding-bottom: 100px;
+}
+#container .cont3 .center {
+  width: 62.5%;
+  background-color: #f1f2f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+#container .cont3 .center .paging {
+  margin: 30px 0;
+  display: flex;
+}
+#container .cont3 .center .paging li {
+  margin: 0 20px;
+}
+#container .cont3 .center .paging li a {
+  color: #111;
+}
+#container .cont3 .center .paging li.highlight a {
+  color: #EA094B;
+  font-weight: 600;
+}
+#container .cont3 .center .linkWrap {
+  display: flex;
+  justify-content: center;
+}
+#container .cont3 .center .linkWrap > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #111;
+  background-color: #111;
+  color: #fff;
+  transition: all 0.5s;
+  margin: 0 10px;
+}
+#container .cont3 .center .linkWrap > a:hover {
+  border: 1px solid #EA094B;
+  background-color: #fff;
+  color: #EA094B;
 }

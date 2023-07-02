@@ -331,73 +331,67 @@ button {
 #container .cont2 {
   display: flex;
   justify-content: center;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 #container .cont2 .center {
-  width: 550px;
+  width: 62.5%;
+  background-color: #f1f2f3;
 }
-#container .cont2 .center h2 {
-  text-align: center;
-  font-size: 40px;
-  padding: 40px 0 20px;
+#container .cont2 .center .textWrap {
+  padding: 50px 80px;
 }
-#container .cont2 .center > p {
-  font-size: 17px;
-  text-align: center;
-  padding-bottom: 40px;
+#container .cont2 .center .textWrap .question {
+  border-bottom: 1px solid #ddd;
 }
-#container .cont2 .center .loginWrap form {
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
-}
-#container .cont2 .center .loginWrap form .line01 {
+#container .cont2 .center .textWrap .question .title {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  font-size: 20px;
+  color: #EA094B;
+  width: 100%;
 }
-#container .cont2 .center .loginWrap form .line01 .leftWrap .idWrap,
-#container .cont2 .center .loginWrap form .line01 .leftWrap .passWrap {
-  margin: 10px 0;
+#container .cont2 .center .textWrap .question .title h5 {
+  font-family: "Poppins", sans-serif;
+  padding-right: 10px;
 }
-#container .cont2 .center .loginWrap form .line01 .leftWrap .idWrap input,
-#container .cont2 .center .loginWrap form .line01 .leftWrap .passWrap input {
-  width: 280px;
-  padding: 15px;
-  border: 1px solid #bbb;
-}
-#container .cont2 .center .loginWrap form .line01 .rightWrap .btnWrap button {
-  width: 150px;
-  height: 108px;
-  border: none;
-  background-color: #222;
-  color: #fff;
+#container .cont2 .center .textWrap .question p {
+  padding: 20px 0 50px;
   font-size: 16px;
-  cursor: pointer;
-  transition: all 0.5s;
+  line-height: 25px;
+  white-space: pre-wrap;
 }
-#container .cont2 .center .loginWrap form .line01 .rightWrap .btnWrap button:disabled {
-  background-color: #ddd;
-  color: #bbb;
-}
-#container .cont2 .center .loginWrap form .line02 {
+#container .cont2 .center .textWrap .answer .title {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
-  border-top: 1px solid #ddd;
+  font-size: 20px;
+  margin: 20px 0;
 }
-#container .cont2 .center .loginWrap form .line02 .textWrap p {
-  font-size: 14px;
-  margin-bottom: 5px;
-  color: #222;
+#container .cont2 .center .textWrap .answer .title h5 {
+  font-family: "Poppins", sans-serif;
+  padding-right: 10px;
 }
-#container .cont2 .center .loginWrap form .line02 .linkWrap a {
+#container .cont2 .center .textWrap .answer p {
+  padding-bottom: 50px;
+  font-size: 16px;
+  line-height: 25px;
+  white-space: pre-wrap;
+}
+#container .cont2 .center .linkWrap {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 50px;
-  background-color: #EA094B;
+  padding-bottom: 50px;
+}
+#container .cont2 .center .linkWrap > a {
+  display: flex;
+  padding: 20px;
+  margin: 0 10px;
+  background-color: #111;
+  border: 1px solid #111;
   color: #fff;
+  transition: all 0.5s;
+}
+#container .cont2 .center .linkWrap > a:hover {
+  border: 1px solid #EA094B;
+  color: #EA094B;
+  background-color: #fff;
 }

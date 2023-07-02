@@ -1,0 +1,38 @@
+<%- include("headerSub", {title:"Qna | PaulBassett", cssFiles:["brd_detail.css"], jsFiles:["board/detail.js"]})%>
+    <div id="container">
+        <div class="cont1"></div>
+        <div class="cont2">
+            <div class="center">
+                <div class="textWrap">
+                    <div class="question">
+                        <div class="title">
+                            <h5>Q</h5>
+                            <span><%- data.title %></span>
+                        </div>
+                        <p><%- data.context %></p>
+                    </div>
+                    <div class="answer">
+                        <div class="title">
+                            <h5>A</h5>
+                            <% if(data.admintitle === "") { %>
+                                <span>답변 대기중인 글입니다.</span>
+                            <% } else { %>
+                                <span><%- data.admintitle %></span>
+                            <% } %>
+                        </div>
+                        <p><%- data.adminanswer %></p>
+                    </div>
+                </div>
+                <div class="linkWrap">
+                    <a class="back" href="/board/list">목록페이지로</a>
+                    <% if (login.memberid === "admin") { %>
+                        <a class="update" href="/board/update/<%- data.num %>">답변하기</a>
+                    <% } else { %>
+                        <a class="update" href="/board/update/<%- data.num %>">수정하기</a>
+                    <% } %>
+                    <a class="delete" href="/dbdelete/<%- data.num %>">삭제하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include("footerSub")%>

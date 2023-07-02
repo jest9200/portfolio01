@@ -1,0 +1,32 @@
+<%- include("headerSub", {title:"Qna | PaulBassett", cssFiles:["brd_update.css"], jsFiles:[]})%>
+    <div id="container">
+        <div class="cont1"></div>
+        <div class="cont2">
+            <div class="center">
+                <div class="titleWrap">
+                    <h2>This is the Modify Composition page.</h2>
+                    <p>작성글 수정페이지입니다.</p>
+                </div>
+                <form id="update" action="/dbupdate" method="post">
+                    <div class="line01">
+                        <input type="hidden" name="num" value="<%- data.num %>">
+                        <input name="title" type="text" placeholder="제목을 작성해주세요." value="<%- data.title %>">
+                    </div>
+                    <div class="line02">
+                        <textarea name="context" placeholder="문의사항을 작성해주세요."><%- data.context %></textarea>
+                    </div>
+                    <% if (login.memberid === "admin") { %>
+                        <div class="adminWrap">
+                            <input name="admintitle" type="text" placeholder="관리자용 제목 작성 폼입니다." value="<%- data.admintitle %>">
+                            <textarea name="adminanswer" placeholder="관리자용 답변 작성 폼입니다."><%- data.adminanswer %></textarea>
+                        </div>
+                    <% } %>
+                    <div class="btnWrap">
+                        <button id="submit" type="submit">작성 완료</button>
+                        <a href="/board/list" type="button">목록페이지로</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <%- include("footerSub")%>

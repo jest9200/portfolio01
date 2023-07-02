@@ -331,73 +331,90 @@ button {
 #container .cont2 {
   display: flex;
   justify-content: center;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 #container .cont2 .center {
-  width: 550px;
+  width: 62.5%;
+  background-color: #f1f2f3;
 }
-#container .cont2 .center h2 {
+#container .cont2 .center .titleWrap {
+  padding: 50px;
   text-align: center;
+}
+#container .cont2 .center .titleWrap h2 {
   font-size: 40px;
-  padding: 40px 0 20px;
+  color: #EA094B;
+  padding-bottom: 15px;
+  font-family: "Poppins", sans-serif;
 }
-#container .cont2 .center > p {
-  font-size: 17px;
-  text-align: center;
-  padding-bottom: 40px;
+#container .cont2 .center .titleWrap p {
+  font-size: 16px;
+  color: #111;
 }
-#container .cont2 .center .loginWrap form {
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
+#container .cont2 .center form {
+  padding: 0 50px 50px;
 }
-#container .cont2 .center .loginWrap form .line01 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 30px;
+#container .cont2 .center form .line01 {
+  width: 95%;
+  margin-bottom: 20px;
 }
-#container .cont2 .center .loginWrap form .line01 .leftWrap .idWrap,
-#container .cont2 .center .loginWrap form .line01 .leftWrap .passWrap {
-  margin: 10px 0;
-}
-#container .cont2 .center .loginWrap form .line01 .leftWrap .idWrap input,
-#container .cont2 .center .loginWrap form .line01 .leftWrap .passWrap input {
-  width: 280px;
-  padding: 15px;
-  border: 1px solid #bbb;
-}
-#container .cont2 .center .loginWrap form .line01 .rightWrap .btnWrap button {
-  width: 150px;
-  height: 108px;
+#container .cont2 .center form .line01 input {
+  width: 100%;
+  padding: 20px;
+  font-family: "Noto Sans KR", sans-serif;
   border: none;
-  background-color: #222;
+  font-size: 16px;
+}
+#container .cont2 .center form .line02 {
+  width: 95%;
+}
+#container .cont2 .center form .line02 textarea {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  border: none;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+#container .cont2 .center form .btnWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#container .cont2 .center form .btnWrap button {
+  border: 1px solid #111;
+  background-color: #111;
   color: #fff;
+  width: 200px;
+  height: 50px;
+  transition: all 0.5s;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.5s;
+  margin-right: 10px;
 }
-#container .cont2 .center .loginWrap form .line01 .rightWrap .btnWrap button:disabled {
-  background-color: #ddd;
-  color: #bbb;
+#container .cont2 .center form .btnWrap button:hover {
+  background-color: #fff;
+  border: 1px solid #EA094B;
+  color: #EA094B;
 }
-#container .cont2 .center .loginWrap form .line02 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 30px;
-  border-top: 1px solid #ddd;
-}
-#container .cont2 .center .loginWrap form .line02 .textWrap p {
-  font-size: 14px;
-  margin-bottom: 5px;
-  color: #222;
-}
-#container .cont2 .center .loginWrap form .line02 .linkWrap a {
+#container .cont2 .center form .btnWrap a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 50px;
-  background-color: #EA094B;
+  background-color: #111;
   color: #fff;
+  width: 198px;
+  height: 48px;
+  border: 1px solid #111;
+  transition: all 0.5s;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#container .cont2 .center form .btnWrap a:hover {
+  background-color: #fff;
+  border: 1px solid #EA094B;
+  color: #EA094B;
 }

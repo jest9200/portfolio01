@@ -113,7 +113,7 @@ app.get("/store",(req,res)=>{
 
 // society
 app.get("/society/pbs",(req,res)=>{
-    res.render("society_pbs.ejs,{login:req.user}")
+    res.render("society_pbs.ejs",{login:req.user})
 })
 app.get("/society/rating",(req,res)=>{
     res.render("society_rating.ejs",{login:req.user})
@@ -193,7 +193,7 @@ app.post("/logincheck", passport.authenticate('local', { failureRedirect: '/logi
 
 // 로그인하지않고 notice 들어갔을때 경고창 띄우기
 app.get("/needlogin",(req,res)=>{
-    res.send("<script>alert('You need to login for reservation.'); location.href = '/login'</script>")
+    res.send("<script>alert('You need to login.'); location.href = '/login'</script>")
 })
 
 // 로그아웃
@@ -216,3 +216,108 @@ app.post("/user", (req, res) => {
         }
     })
 });
+
+
+// 게시판 목록 페이지 (페이징까지)
+app.get("/board/list",(req,res)=>{
+    db.collection("board").find().toArray((err, total) => {
+        // 게시글 전체 갯수값 알아내기
+        let totalData = total.length;
+        // 웹브라우저 주소창에 몇번 페이징 번호로 접속했는지 체크
+        let pageNumber = (req.query.page == null) ? 1 : Number(req.query.page)
+        // 게시판에 보여줄 게시글 갯수
+        let perPage = 5;
+        // 블록당 보여줄 페이징 번호 갯수
+        let blockCount = 5;
+        // 이전,다음 블록간 이동을 하기위한 현재 페이지 블록 구해보기
+        let blockNum = Math.ceil(pageNumber / blockCount);
+        // 블록안에 페이지 번호 시작값 알아내기
+        let blockStart = ((blockNum - 1) * blockCount) + 1;
+        // 블록안에 페이지 번호 끝값 알아내기
+        let blockEnd = blockStart + blockCount - 1;
+
+        // 게시글 전체 갯수 토대로 전체페이지 번호가 몇개가 만들어져서 표시되어야하는지
+        let totalPaging = Math.ceil(totalData / perPage);
+
+        // 블록(그룹)에서 마지막 페이지번호가 끝번호보다 크다면 페이지의 끝번호를 강제로 고정
+        if (blockEnd > totalPaging) {
+            blockEnd = totalPaging;
+        }
+
+        // 블록(그룹)의 총 갯수값 구하기
+        let totalBlock = Math.ceil(totalPaging / blockCount);
+
+        // db에서 3개씩 게시글을 뽑아서 가지고 오기위한 순서값을 정해줌
+        let startFrom = (pageNumber - 1) * perPage;
+
+        // db에서 find명령어로 꺼내오는 작업 진행
+        db.collection("board").find().sort({ num: -1 }).skip(startFrom).limit(perPage).toArray((err, result) => {
+            res.render("brd_list.ejs", {
+                data: result, //find로 찾아온 게시글 데이터들 3개 보내줌
+                totalPaging: totalPaging, //페이지 번호 총갯수값
+                blockStart: blockStart, //블록안에 페이지 시작번호값
+                blockEnd: blockEnd, //블록안에 페이지 끝번호값
+                blockNum: blockNum, //보고있는 페이지의 블록(그룹)번호
+                totalBlock: totalBlock, //블록(그룹)의 총갯수값
+                pageNumber: pageNumber, //현재 보고있는 페이지 번호값
+                text:"",
+                login: req.user //로그인 정보
+            })
+        })
+
+    })
+})
+
+// 게시판 글 작성 페이지
+app.get("/board/insert", (req, res) => {
+    res.render("brd_insert.ejs", { login: req.user });
+})
+
+app.post("/dbinsert",(req,res)=>{
+    db.collection("count").findOne({name:"글번호"},(err,countResult)=>{
+        db.collection("board").insertOne({
+            num: countResult.brdCount,
+            title: req.body.title,
+            context: req.body.context,
+            admintitle:"",
+            adminanswer:""
+        },(err,result)=>{
+            db.collection("count").updateOne({name:"글번호"},{$inc:{brdCount:1}},(err,result)=>{
+                res.redirect(`/board/detail/${countResult.brdCount}`)
+            })
+        })
+    })
+})
+
+// 게시판 상세 페이지
+app.get("/board/detail/:num",(req,res)=>{
+    db.collection("board").findOne({num:Number(req.params.num)},(err,result)=>{
+        res.render("brd_detail.ejs",{data:result, login:req.user});
+    })
+})
+
+// 게시글 review 수정페이지 요청
+app.get("/board/update/:num", (req, res) => {
+    db.collection("board").findOne({ num: Number(req.params.num) }, (err, result) => {
+        res.render("brd_update.ejs", { data: result, login: req.user });
+    })
+})
+
+app.post("/dbupdate",(req,res)=>{
+    db.collection("board").updateOne({num:Number(req.body.num)},{$set:{
+        title: req.body.title,
+        context: req.body.context,
+        admintitle:req.body.admintitle,
+        adminanswer:req.body.adminanswer
+
+    }},(err,result)=>{
+        res.redirect(`/board/detail/${req.body.num}`);
+    })
+})
+
+// 게시글 review 삭제 요청
+app.get("/dbdelete/:num", (req, res) => {
+    db.collection("board").deleteOne({ num: Number(req.params.num) }, (err, result) => {
+        res.redirect("/board/list")
+    })
+})
