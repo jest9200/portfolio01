@@ -2176,1132 +2176,1130 @@ html::-webkit-scrollbar {
 
 // footer end
 
-@media screen and (max-width:1350px) {
-
-    #header,
-    #header2 {
-
-        .center {
-            width: 83%;
-            flex-direction: column;
-            align-items: center;
-
-            .gnb {
-                padding-left: 0px;
-                width: 100%;
-            }
-
-            .subWrap {
-                display: none;
-            }
-        }
-
-        .hamMenu {
-            display: block;
-        }
-    }
-
-    #cont1 {
-        .cont1Wrap {
-            width: 85%;
-
-            .box {
-                >a {
-                    .coverWrap {
-                        .episode {
-                            width: 90%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    #cont2 {
-
-        .titleWrap {
-            .center {
-                >h2 {
-                    font-size: 40px;
-                }
-
-                >p {
-                    font-size: 16px;
-                }
-            }
-        }
-
-        .sideBg01,
-        .sideBg02 {
-            width: 20%;
-        }
-
-        .btnWrap {
-
-            .prev,
-            .next {
-                >a {
-                    i {
-                        font-size: 40px;
-                    }
-                }
-            }
-
-            .count {
-                font-size: 16px;
-
-                span {
-                    color: #EA094B;
-                    font-size: 40px;
-                }
-            }
-
-            .progress {
-                width: 30%;
-            }
-
-            .pause_play {
-                bottom: 20%;
-
-                >a {
-                    font-size: 25px;
-                }
-            }
-        }
-
-        .textWrap {
-            top: 25%;
-            width: 55%;
-            height: 550px;
-
-            >div {
-                .title {
-                    padding: 60px 40px 0;
-
-                    >h4 {
-                        font-size: 16px;
-                    }
-
-                    >h3 {
-                        font-size: 35px;
-                        margin: 30px 0;
-                    }
-                }
-
-                .context {
-                    padding: 0 40px;
-
-                    >p {
-                        font-size: 14px;
-                        line-height: 20px;
-                    }
-                }
-
-                .linkWrap {
-                    bottom: 40px;
-                    right: 40px;
-                    .link {
-                        width: 180px;
-                        height: 45px;
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-
-        .sliderWrap {
-            height: 400px;
-        }
-    }
-
-    #cont3 {
-
-        .titleWrap {
-
-            .center {
-                >h2 {
-                    font-size: 40px;
-                }
-
-                >p {
-                    font-size: 16px;
-                }
-            }
-        }
-
-        .textWrap {
-            .center {
-                .context {
-                    h3 {
-                        font-size: 20px;
-                        line-height: 30px;
-                        padding-top: 35px;
-                        padding-bottom: 25px;
-                    }
-
-                    p {
-                        font-size: 15px;
-                        line-height: 22px;
-                    }
-                }
-            }
-        }
-
-        .gradeWrap {
-            .center {
-                h5 {
-                    font-size: 18px;
-                }
-
-                .grade {
-                    ul {
-                        li {
-                            .listBox {
-                                padding: 0 10px;
-
-                                span {
-                                    font-size: 16px;
-                                }
-
-                                h4 {
-                                    font-size: 20px;
-                                }
-
-                                p {
-                                    font-size: 12px;
-                                    line-height: 18px;
-                                }
-                            }
-
-                            &::before {
-                                width: 72%;
-                                top: 7px;
-                            }
-
-                            &:nth-child(5) {
-                                .listBox {
-                                    img {
-                                        left: -3px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .slideWrap {
-            width: 55%;
-            height: 450px;
-        }
-    }
-
-    #cont4 {
-        .titleWrap {
-            .center {
-                >h2 {
-                    font-size: 40px;
-                }
-
-                >p {
-                    font-size: 16px;
-                }
-            }
-        }
-
-        .botWrap {
-            .center {
-                flex-wrap: wrap;
-
-                .imgWrap {
-                    width: 48%;
-                    height: 300px;
-                    top: -50px;
-
-                    .imgBox.long {
-                        .textCover {
-                            h3 {
-                                font-size: 16px;
-                            }
-
-                            h2 {
-                                font-size: 25px;
-                            }
-
-                            p {
-                                font-size: 14px;
-                                line-height: 24px;
-                            }
-                        }
-                    }
-
-                    .imgBox.short {
-                        height: 10%;
-                    }
-
-                    &:nth-child(1) {
-                        .short {
-                            height: 19%;
-                        }
-                    }
-
-                    &:nth-child(3) {
-                        position: relative;
-                        top: -20px;
-                    }
-
-                    &:nth-child(4) {
-                        position: relative;
-                        top: -20px;
-                    }
-                }
-            }
-        }
-    }
-
-    #cont5 {
-        .titleWrap {
-            .center {
-                >h2 {
-                    font-size: 40px;
-                }
-
-                >p {
-                    font-size: 16px;
-                }
-
-                .subText {
-                    font-size: 14px;
-                    line-height: 20px;
-                }
-            }
-        }
-
-        .tabWrap {
-            .center {
-                .tabMenu {
-                    li {
-                        a {
-                            h2 {
-                                font-size: 22px;
-                            }
-
-                            p {
-                                font-size: 13px;
-                                line-height: 18px;
-                            }
-                        }
-                    }
-                }
-
-                .tabContents {
-                    height: 400px;
-
-                    .tabBox {
-                        &:nth-child(1) {
-                            .center {
-                                .textWrap {
-                                    width: 400px;
-
-                                    h3 {
-                                        font-size: 20px;
-                                        line-height: 25px;
-                                    }
-
-                                    p {
-                                        font-size: 14px;
-                                        line-height: 25px;
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            .center {
-                                .textWrap {
-                                    width: 500px;
-                                    padding: 0 50px;
-
-                                    h3 {
-                                        font-size: 24px;
-                                    }
-
-                                    p {
-                                        font-size: 14px;
-                                        line-height: 25px;
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(3) {
-                            .center {
-                                .textWrap {
-                                    width: 400px;
-
-                                    h3 {
-                                        font-size: 24px;
-                                    }
-
-                                    p {
-                                        font-size: 14px;
-                                        line-height: 25px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .tabBox.on {
-                        opacity: 1;
-                    }
-
-                }
-            }
-        }
-    }
-
-    #cont6 {
-        .titleWrap {
-            position: static;
-
-            .center {
-                padding-top: 160px;
-
-                >h2 {
-                    font-size: 40px;
-                }
-
-                >p {
-                    font-size: 16px;
-                }
-            }
-        }
-
-        .contentsWrap {
-            .center {
-                width: 83%;
-                top: 0px;
-
-                .wrap {
-                    align-items: center;
-                    flex-direction: column;
-
-                    .leftWrap {
-                        width: 100%;
-                        height: 250px;
-                        margin-bottom: 20px;
-
-                        .slider {
-                            .view {
-                                &:nth-child(1) {
-                                    h2 {
-                                        padding: 20px 50px 10px;
-                                        font-size: 20px;
-                                    }
-
-                                    p {
-                                        padding: 0 50px 120px;
-                                        font-size: 14px;
-                                    }
-
-                                    ul {
-                                        li {
-                                            font-size: 14px;
-                                            line-height: 18px;
-
-                                            &:nth-child(1) {
-                                                &::before {
-                                                    bottom: 50px;
-                                                    width: 90px;
-                                                    height: 90px;
-                                                    background-position: -462px -40px;
-                                                }
-
-                                                &::after {
-                                                    background-image: none;
-                                                }
-                                            }
-
-                                            &:nth-child(2) {
-                                                &::before {
-                                                    bottom: 50px;
-                                                    width: 90px;
-                                                    height: 90px;
-                                                    background-position: -30px -4px;
-                                                }
-
-                                                &::after {
-                                                    background-image: none;
-                                                }
-                                            }
-
-                                            &:nth-child(3) {
-                                                &::before {
-                                                    bottom: 50px;
-                                                    width: 90px;
-                                                    height: 90px;
-                                                    background-position: -30px -4px;
-                                                }
-
-                                                &::after {
-                                                    background-image: none;
-                                                }
-                                            }
-
-                                            &:nth-child(4) {
-                                                &::before {
-                                                    bottom: 50px;
-                                                    width: 90px;
-                                                    height: 90px;
-                                                    background-position: -30px -4px;
-                                                }
-
-                                                &::after {
-                                                    background-image: none;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-
-                                &:nth-child(2) {
-                                    &::before {
-                                        background-image: none;
-                                    }
-
-                                    &::after {
-                                        width: 200px;
-                                        height: 40px;
-                                        bottom: 20px;
-                                        right: 30px;
-                                    }
-
-                                    >h2 {
-                                        padding: 20px 50px 10px;
-                                        font-size: 20px;
-                                    }
-
-                                    >p {
-                                        font-size: 14px;
-                                    }
-
-                                    .crownWrap {
-                                        h3 {
-                                            font-size: 18px;
-                                            padding-left: 50px;
-                                            padding-bottom: 5px;
-                                        }
-
-                                        .wrapper {
-
-                                            .left,
-                                            .right {
-                                                width: 35%;
-
-                                                >p {
-                                                    font-size: 13px;
-                                                    line-height: 25px;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-
-                            .next,
-                            .prev {
-                                top: 30px;
-
-                                a {
-                                    font-size: 25px;
-                                }
-                            }
-                        }
-
-
-                    }
-
-                    .rightWrap {
-                        width: 100%;
-
-                        .textWrap {
-                            height: 380px;
-
-                            p {
-                                font-size: 14px;
-                                line-height: 25px;
-                                padding-bottom: 20px;
-                            }
-                        }
-                    }
-                }
-
-            }
-        }
-    }
-
-    #footer {
-        .center {
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-
-            .leftWrap {
-                .footerMenu {
-                    padding-top: 20px;
-                    padding-bottom: 10px;
-                }
-
-                .info {
-                    font-size: 14px;
-                    line-height: 20px;
-                    padding-bottom: 5px;
-                }
-
-                .copyright {
-                    font-size: 14px;
-                }
-            }
-
-            .rightWrap {
-                padding-bottom: 20px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width:1024px) {
-    #header,
-    #header2 {
-
-        .center {
-            width: 80%;
-            .gnb > li > a {
-                font-size: 14px;
-            }
-        }
-    }
-
-    #cont1 {
-
-        .cont1Wrap {
-            width: 80%;
-
-            .box {
-
-                &:nth-child(2),
-                &:nth-child(3) {
-                    display: none;
-                }
-            }
-
-            .box.on {
-                width: 100%;
-            }
-
-            .scrollBox {
-                right: -35px;
-            }
-        }
-    }
-
-    #cont2 {
-        .titleWrap {
-            .center {
-                width: 80%;
-                padding-top: 220px;
-            }
-        }
-        .sideBg01 {
-            left: 8%;
-        }
-        .btnWrap {
-            .prev,
-            .next {
-                >a {
-                    i {
-                        font-size: 30px;
-                    }
-                }
-            }
-            .prev {
-                left: 25%;
-            }
-            .progress {
-                display: none;
-            }
-
-            .pause_play {
-                bottom: 25%;
-                >a {
-                    font-size: 20px;
-                }
-            }
-        }
-
-        .textWrap {
-            top: 32%;
-            width: 80%;
-            height: 400px;
-
-            >div {
-                .title {
-                    padding: 40px 40px 0;
-
-                    >h4 {
-                        font-size: 14px;
-                    }
-
-                    >h3 {
-                        font-size: 25px;
-                        margin: 20px 0;
-                    }
-                }
-
-                .context {
-                    >p {
-                        width: 80%;
-                        font-size: 14px;
-                        line-height: 20px;
-                    }
-                }
-
-                .linkWrap {
-                    width: 140px;
-                    font-size: 13px;
-                }
-            }
-        }
-
-        .sliderWrap {
-            width: 55%;
-            height: 300px;
-            > div {
-                top: 0px;
-            }
-        }
-    }
-
-    #cont3 {
-
-        .titleWrap {
-            position: static;
-            .center {
-                padding-top: 150px;
-                width: 80%;
-            }
-        }
-        .slideWrap {
-            position: static;
-            width: 80%;
-            margin: 20px auto 0;
-            height: 350px;
-        }
-        .textWrap {
-            .center {
-                width: 80%;
-                .context {
-                    width: 100%;
-                    h3 {
-                        font-size: 18px;
-                        line-height: 25px;
-                        padding: 15px 0;
-                    }
-
-                    p {
-                        font-size: 14px;
-                        line-height: 16px;
-                        padding-bottom: 10px;
-                    }
-                }
-            }
-        }
-
-        .gradeWrap {
-            height: 150px;
-            .center {
-                width: 80%;
-                h5 {
-                    font-size: 16px;
-                    padding: 30px 0;
-                }
-
-                .grade {
-                    ul {
-                        li {
-                            .listBox {
-
-                                span {
-                                    font-size: 15px;
-                                }
-
-                                h4 {
-                                    font-size: 15px;
-                                }
-
-                                p {
-                                    display: none;
-                                }
-                            }
-
-                            &::before {
-                                width: 62%;
-                            }
-
-                            &:nth-child(5) {
-                                .listBox {
-                                    img {
-                                        left: -3px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    #cont4 {
-        .titleWrap {
-            .center {
-                width: 80%;
-            }
-        }
-
-        .botWrap {
-            .center {
-                width: 80%;
-
-                .imgWrap {
-                    .imgBox.long {
-                        .textCover {
-                            &::before,
-                            &::after {
-                                background-image: none;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    #cont5 {
-        .titleWrap {
-            .center {
-                padding-top: 80px;
-                width: 80%;
-            }
-        }
-
-        .tabWrap {
-            .center {
-                width: 80%;
-                .tabMenu {
-                    li {
-                        a {
-                            height: 100px;
-                            h2 {
-                                font-size: 18px;
-                            }
-
-                            p {
-                                display: none;
-                            }
-                        }
-                    }
-                }
-
-                .tabContents {
-                    .tabBox {
-                        &:nth-child(1) {
-                            .center {
-                                .textWrap {
-                                    width: 300px;
-
-                                    h3 {
-                                        font-size: 18px;
-                                        line-height: 20px;
-                                    }
-
-                                    p {
-                                        font-size: 14px;
-                                        line-height: 20px;
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            .center {
-                                .textWrap {
-                                    width: 450px;
-
-                                    h3 {
-                                        font-size: 20px;
-                                    }
-
-                                    p {
-                                        line-height: 20px;
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(3) {
-                            .center {
-                                .textWrap {
-                                    width: 320px;
-
-                                    h3 {
-                                        font-size: 20px;
-                                    }
-
-                                    p {
-                                        line-height: 25px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    #cont6 {
-        .titleWrap {
-
-            .center {
-                width: 80%;
-            }
-        }
-
-        .contentsWrap {
-            .center {
-                width: 80%;
-
-                .wrap {
-                    align-items: center;
-                    flex-direction: column;
-
-                    .leftWrap {
-                        display: none;
-                    }
-
-                    .rightWrap {
-                        width: 100%;
-
-                        .textWrap {
-                            height: 600px;
-
-                            p {
-                                font-size: 15px;
-                                line-height: 30px;
-                                padding-bottom: 25px;
-                            }
-                        }
-                    }
-                }
-
-            }
-        }
-    }
-
-    #footer {
-        .center {
-            width: 80%;
-        }
-    }
-}
-
-@media screen and (max-width:768px) {
+// @media screen and (max-width:1350px) {
+
+//     #header,
+//     #header2 {
+
+//         .center {
+//             width: 83%;
+//             flex-direction: column;
+//             align-items: center;
+
+//             .gnb {
+//                 padding-left: 0px;
+//                 width: 100%;
+//             }
+
+//             .subWrap {
+//                 display: none;
+//             }
+//         }
+
+//         .hamMenu {
+//             display: block;
+//         }
+//     }
+
+//     #cont1 {
+//         .cont1Wrap {
+//             width: 85%;
+
+//             .box {
+//                 >a {
+//                     .coverWrap {
+//                         .episode {
+//                             width: 90%;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     #cont2 {
+
+//         .titleWrap {
+//             .center {
+//                 >h2 {
+//                     font-size: 40px;
+//                 }
+
+//                 >p {
+//                     font-size: 16px;
+//                 }
+//             }
+//         }
+
+//         .sideBg01,
+//         .sideBg02 {
+//             width: 20%;
+//         }
+
+//         .btnWrap {
+
+//             .prev,
+//             .next {
+//                 >a {
+//                     i {
+//                         font-size: 40px;
+//                     }
+//                 }
+//             }
+
+//             .count {
+//                 font-size: 16px;
+
+//                 span {
+//                     color: #EA094B;
+//                     font-size: 40px;
+//                 }
+//             }
+
+//             .progress {
+//                 width: 30%;
+//             }
+
+//             .pause_play {
+//                 bottom: 20%;
+
+//                 >a {
+//                     font-size: 25px;
+//                 }
+//             }
+//         }
+
+//         .textWrap {
+//             top: 25%;
+//             width: 55%;
+//             height: 550px;
+
+//             >div {
+//                 .title {
+//                     padding: 60px 40px 0;
+
+//                     >h4 {
+//                         font-size: 16px;
+//                     }
+
+//                     >h3 {
+//                         font-size: 35px;
+//                         margin: 30px 0;
+//                     }
+//                 }
+
+//                 .context {
+//                     padding: 0 40px;
+
+//                     >p {
+//                         font-size: 14px;
+//                         line-height: 20px;
+//                     }
+//                 }
+
+//                 .linkWrap {
+//                     bottom: 40px;
+//                     right: 40px;
+//                     .link {
+//                         width: 180px;
+//                         height: 45px;
+//                         font-size: 14px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .sliderWrap {
+//             height: 400px;
+//         }
+//     }
+
+//     #cont3 {
+
+//         .titleWrap {
+
+//             .center {
+//                 >h2 {
+//                     font-size: 40px;
+//                 }
+
+//                 >p {
+//                     font-size: 16px;
+//                 }
+//             }
+//         }
+
+//         .textWrap {
+//             .center {
+//                 .context {
+//                     h3 {
+//                         font-size: 20px;
+//                         line-height: 30px;
+//                         padding-top: 35px;
+//                         padding-bottom: 25px;
+//                     }
+
+//                     p {
+//                         font-size: 15px;
+//                         line-height: 22px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .gradeWrap {
+//             .center {
+//                 h5 {
+//                     font-size: 18px;
+//                 }
+
+//                 .grade {
+//                     ul {
+//                         li {
+//                             .listBox {
+//                                 padding: 0 10px;
+
+//                                 span {
+//                                     font-size: 16px;
+//                                 }
+
+//                                 h4 {
+//                                     font-size: 20px;
+//                                 }
+
+//                                 p {
+//                                     font-size: 12px;
+//                                     line-height: 18px;
+//                                 }
+//                             }
+
+//                             &::before {
+//                                 width: 72%;
+//                                 top: 7px;
+//                             }
+
+//                             &:nth-child(5) {
+//                                 .listBox {
+//                                     img {
+//                                         left: -3px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+
+//         .slideWrap {
+//             width: 55%;
+//             height: 450px;
+//         }
+//     }
+
+//     #cont4 {
+//         .titleWrap {
+//             .center {
+//                 >h2 {
+//                     font-size: 40px;
+//                 }
+
+//                 >p {
+//                     font-size: 16px;
+//                 }
+//             }
+//         }
+
+//         .botWrap {
+//             .center {
+//                 flex-wrap: wrap;
+
+//                 .imgWrap {
+//                     width: 48%;
+//                     height: 300px;
+//                     top: -50px;
+
+//                     .imgBox.long {
+//                         .textCover {
+//                             h3 {
+//                                 font-size: 16px;
+//                             }
+
+//                             h2 {
+//                                 font-size: 25px;
+//                             }
+
+//                             p {
+//                                 font-size: 14px;
+//                                 line-height: 24px;
+//                             }
+//                         }
+//                     }
+
+//                     .imgBox.short {
+//                         height: 10%;
+//                     }
+
+//                     &:nth-child(1) {
+//                         .short {
+//                             height: 19%;
+//                         }
+//                     }
+
+//                     &:nth-child(3) {
+//                         position: relative;
+//                         top: -20px;
+//                     }
+
+//                     &:nth-child(4) {
+//                         position: relative;
+//                         top: -20px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     #cont5 {
+//         .titleWrap {
+//             .center {
+//                 >h2 {
+//                     font-size: 40px;
+//                 }
+
+//                 >p {
+//                     font-size: 16px;
+//                 }
+
+//                 .subText {
+//                     font-size: 14px;
+//                     line-height: 20px;
+//                 }
+//             }
+//         }
+
+//         .tabWrap {
+//             .center {
+//                 .tabMenu {
+//                     li {
+//                         a {
+//                             h2 {
+//                                 font-size: 22px;
+//                             }
+
+//                             p {
+//                                 font-size: 13px;
+//                                 line-height: 18px;
+//                             }
+//                         }
+//                     }
+//                 }
+
+//                 .tabContents {
+//                     height: 400px;
+
+//                     .tabBox {
+//                         &:nth-child(1) {
+//                             .center {
+//                                 .textWrap {
+//                                     width: 400px;
+
+//                                     h3 {
+//                                         font-size: 20px;
+//                                         line-height: 25px;
+//                                     }
+
+//                                     p {
+//                                         font-size: 14px;
+//                                         line-height: 25px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+
+//                         &:nth-child(2) {
+//                             .center {
+//                                 .textWrap {
+//                                     width: 500px;
+//                                     padding: 0 50px;
+
+//                                     h3 {
+//                                         font-size: 24px;
+//                                     }
+
+//                                     p {
+//                                         font-size: 14px;
+//                                         line-height: 25px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+
+//                         &:nth-child(3) {
+//                             .center {
+//                                 .textWrap {
+//                                     width: 400px;
+
+//                                     h3 {
+//                                         font-size: 24px;
+//                                     }
+
+//                                     p {
+//                                         font-size: 14px;
+//                                         line-height: 25px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+
+//                     .tabBox.on {
+//                         opacity: 1;
+//                     }
+
+//                 }
+//             }
+//         }
+//     }
+
+//     #cont6 {
+//         .titleWrap {
+//             position: static;
+
+//             .center {
+//                 padding-top: 160px;
+
+//                 >h2 {
+//                     font-size: 40px;
+//                 }
+
+//                 >p {
+//                     font-size: 16px;
+//                 }
+//             }
+//         }
+
+//         .contentsWrap {
+//             .center {
+//                 width: 83%;
+//                 top: 0px;
+
+//                 .wrap {
+//                     align-items: center;
+//                     flex-direction: column;
+
+//                     .leftWrap {
+//                         width: 100%;
+//                         height: 250px;
+//                         margin-bottom: 20px;
+
+//                         .slider {
+//                             .view {
+//                                 &:nth-child(1) {
+//                                     h2 {
+//                                         padding: 20px 50px 10px;
+//                                         font-size: 20px;
+//                                     }
+
+//                                     p {
+//                                         padding: 0 50px 120px;
+//                                         font-size: 14px;
+//                                     }
+
+//                                     ul {
+//                                         li {
+//                                             font-size: 14px;
+//                                             line-height: 18px;
+
+//                                             &:nth-child(1) {
+//                                                 &::before {
+//                                                     bottom: 50px;
+//                                                     width: 90px;
+//                                                     height: 90px;
+//                                                     background-position: -462px -40px;
+//                                                 }
+
+//                                                 &::after {
+//                                                     background-image: none;
+//                                                 }
+//                                             }
+
+//                                             &:nth-child(2) {
+//                                                 &::before {
+//                                                     bottom: 50px;
+//                                                     width: 90px;
+//                                                     height: 90px;
+//                                                     background-position: -30px -4px;
+//                                                 }
+
+//                                                 &::after {
+//                                                     background-image: none;
+//                                                 }
+//                                             }
+
+//                                             &:nth-child(3) {
+//                                                 &::before {
+//                                                     bottom: 50px;
+//                                                     width: 90px;
+//                                                     height: 90px;
+//                                                     background-position: -30px -4px;
+//                                                 }
+
+//                                                 &::after {
+//                                                     background-image: none;
+//                                                 }
+//                                             }
+
+//                                             &:nth-child(4) {
+//                                                 &::before {
+//                                                     bottom: 50px;
+//                                                     width: 90px;
+//                                                     height: 90px;
+//                                                     background-position: -30px -4px;
+//                                                 }
+
+//                                                 &::after {
+//                                                     background-image: none;
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+
+//                                 &:nth-child(2) {
+//                                     &::before {
+//                                         background-image: none;
+//                                     }
+
+//                                     &::after {
+//                                         width: 200px;
+//                                         height: 40px;
+//                                         bottom: 20px;
+//                                         right: 30px;
+//                                     }
+
+//                                     >h2 {
+//                                         padding: 20px 50px 10px;
+//                                         font-size: 20px;
+//                                     }
+
+//                                     >p {
+//                                         font-size: 14px;
+//                                     }
+
+//                                     .crownWrap {
+//                                         h3 {
+//                                             font-size: 18px;
+//                                             padding-left: 50px;
+//                                             padding-bottom: 5px;
+//                                         }
+
+//                                         .wrapper {
+
+//                                             .left,
+//                                             .right {
+//                                                 width: 35%;
+
+//                                                 >p {
+//                                                     font-size: 13px;
+//                                                     line-height: 25px;
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+//                             }
+
+//                             .next,
+//                             .prev {
+//                                 top: 30px;
+
+//                                 a {
+//                                     font-size: 25px;
+//                                 }
+//                             }
+//                         }
+
+
+//                     }
+
+//                     .rightWrap {
+//                         width: 100%;
+
+//                         .textWrap {
+//                             height: 380px;
+
+//                             p {
+//                                 font-size: 14px;
+//                                 line-height: 25px;
+//                                 padding-bottom: 20px;
+//                             }
+//                         }
+//                     }
+//                 }
+
+//             }
+//         }
+//     }
+
+//     #footer {
+//         .center {
+//             align-items: center;
+//             flex-direction: column;
+//             text-align: center;
+
+//             .leftWrap {
+//                 .footerMenu {
+//                     padding-top: 20px;
+//                     padding-bottom: 10px;
+//                 }
+
+//                 .info {
+//                     font-size: 14px;
+//                     line-height: 20px;
+//                     padding-bottom: 5px;
+//                 }
+
+//                 .copyright {
+//                     font-size: 14px;
+//                 }
+//             }
+
+//             .rightWrap {
+//                 padding-bottom: 20px;
+//             }
+//         }
+//     }
+// }
+// @media screen and (max-width:1024px) {
+//     #header,
+//     #header2 {
+
+//         .center {
+//             width: 80%;
+//             .gnb > li > a {
+//                 font-size: 14px;
+//             }
+//         }
+//     }
+
+//     #cont1 {
+
+//         .cont1Wrap {
+//             width: 80%;
+
+//             .box {
+
+//                 &:nth-child(2),
+//                 &:nth-child(3) {
+//                     display: none;
+//                 }
+//             }
+
+//             .box.on {
+//                 width: 100%;
+//             }
+
+//             .scrollBox {
+//                 right: -35px;
+//             }
+//         }
+//     }
+
+//     #cont2 {
+//         .titleWrap {
+//             .center {
+//                 width: 80%;
+//                 padding-top: 220px;
+//             }
+//         }
+//         .sideBg01 {
+//             left: 8%;
+//         }
+//         .btnWrap {
+//             .prev,
+//             .next {
+//                 >a {
+//                     i {
+//                         font-size: 30px;
+//                     }
+//                 }
+//             }
+//             .prev {
+//                 left: 25%;
+//             }
+//             .progress {
+//                 display: none;
+//             }
+
+//             .pause_play {
+//                 bottom: 25%;
+//                 >a {
+//                     font-size: 20px;
+//                 }
+//             }
+//         }
+
+//         .textWrap {
+//             top: 32%;
+//             width: 80%;
+//             height: 400px;
+
+//             >div {
+//                 .title {
+//                     padding: 40px 40px 0;
+
+//                     >h4 {
+//                         font-size: 14px;
+//                     }
+
+//                     >h3 {
+//                         font-size: 25px;
+//                         margin: 20px 0;
+//                     }
+//                 }
+
+//                 .context {
+//                     >p {
+//                         width: 80%;
+//                         font-size: 14px;
+//                         line-height: 20px;
+//                     }
+//                 }
+
+//                 .linkWrap {
+//                     width: 140px;
+//                     font-size: 13px;
+//                 }
+//             }
+//         }
+
+//         .sliderWrap {
+//             width: 55%;
+//             height: 300px;
+//             > div {
+//                 top: 0px;
+//             }
+//         }
+//     }
+
+//     #cont3 {
+
+//         .titleWrap {
+//             position: static;
+//             .center {
+//                 padding-top: 150px;
+//                 width: 80%;
+//             }
+//         }
+//         .slideWrap {
+//             position: static;
+//             width: 80%;
+//             margin: 20px auto 0;
+//             height: 350px;
+//         }
+//         .textWrap {
+//             .center {
+//                 width: 80%;
+//                 .context {
+//                     width: 100%;
+//                     h3 {
+//                         font-size: 18px;
+//                         line-height: 25px;
+//                         padding: 15px 0;
+//                     }
+
+//                     p {
+//                         font-size: 14px;
+//                         line-height: 16px;
+//                         padding-bottom: 10px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .gradeWrap {
+//             height: 150px;
+//             .center {
+//                 width: 80%;
+//                 h5 {
+//                     font-size: 16px;
+//                     padding: 30px 0;
+//                 }
+
+//                 .grade {
+//                     ul {
+//                         li {
+//                             .listBox {
+
+//                                 span {
+//                                     font-size: 15px;
+//                                 }
+
+//                                 h4 {
+//                                     font-size: 15px;
+//                                 }
+
+//                                 p {
+//                                     display: none;
+//                                 }
+//                             }
+
+//                             &::before {
+//                                 width: 62%;
+//                             }
+
+//                             &:nth-child(5) {
+//                                 .listBox {
+//                                     img {
+//                                         left: -3px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     #cont4 {
+//         .titleWrap {
+//             .center {
+//                 width: 80%;
+//             }
+//         }
+
+//         .botWrap {
+//             .center {
+//                 width: 80%;
+
+//                 .imgWrap {
+//                     .imgBox.long {
+//                         .textCover {
+//                             &::before,
+//                             &::after {
+//                                 background-image: none;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     #cont5 {
+//         .titleWrap {
+//             .center {
+//                 padding-top: 80px;
+//                 width: 80%;
+//             }
+//         }
+
+//         .tabWrap {
+//             .center {
+//                 width: 80%;
+//                 .tabMenu {
+//                     li {
+//                         a {
+//                             height: 100px;
+//                             h2 {
+//                                 font-size: 18px;
+//                             }
+
+//                             p {
+//                                 display: none;
+//                             }
+//                         }
+//                     }
+//                 }
+
+//                 .tabContents {
+//                     .tabBox {
+//                         &:nth-child(1) {
+//                             .center {
+//                                 .textWrap {
+//                                     width: 300px;
+
+//                                     h3 {
+//                                         font-size: 18px;
+//                                         line-height: 20px;
+//                                     }
+
+//                                     p {
+//                                         font-size: 14px;
+//                                         line-height: 20px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+
+//                         &:nth-child(2) {
+//                             .center {
+//                                 .textWrap {
+//                                     width: 450px;
+
+//                                     h3 {
+//                                         font-size: 20px;
+//                                     }
+
+//                                     p {
+//                                         line-height: 20px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+
+//                         &:nth-child(3) {
+//                             .center {
+//                                 .textWrap {
+//                                     width: 320px;
+
+//                                     h3 {
+//                                         font-size: 20px;
+//                                     }
+
+//                                     p {
+//                                         line-height: 25px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     #cont6 {
+//         .titleWrap {
+
+//             .center {
+//                 width: 80%;
+//             }
+//         }
+
+//         .contentsWrap {
+//             .center {
+//                 width: 80%;
+
+//                 .wrap {
+//                     align-items: center;
+//                     flex-direction: column;
+
+//                     .leftWrap {
+//                         display: none;
+//                     }
+
+//                     .rightWrap {
+//                         width: 100%;
+
+//                         .textWrap {
+//                             height: 600px;
+
+//                             p {
+//                                 font-size: 15px;
+//                                 line-height: 30px;
+//                                 padding-bottom: 25px;
+//                             }
+//                         }
+//                     }
+//                 }
+
+//             }
+//         }
+//     }
+
+//     #footer {
+//         .center {
+//             width: 80%;
+//         }
+//     }
+// }
+// @media screen and (max-width:768px) {
       
 
-    .sideMenu {
-        display: none;
-    }
+//     .sideMenu {
+//         display: none;
+//     }
 
-    #header,
-    #header2 {
+//     #header,
+//     #header2 {
 
-        .center {
-            width: 90%;
-        }
-    }
+//         .center {
+//             width: 90%;
+//         }
+//     }
 
-    #cont1 {
+//     #cont1 {
 
-        .cont1Wrap {
-            width: 90%;
-        }
-    }
+//         .cont1Wrap {
+//             width: 90%;
+//         }
+//     }
 
-    #cont2 {
-        .titleWrap {
-            .center {
-                width: 90%;
-            }
-        }
+//     #cont2 {
+//         .titleWrap {
+//             .center {
+//                 width: 90%;
+//             }
+//         }
 
-        .sideBg01,
-        .sideBg02 {
-            width: 25%;
-        }
-        .sideBg01 {
-            left: 0%;
-        }
+//         .sideBg01,
+//         .sideBg02 {
+//             width: 25%;
+//         }
+//         .sideBg01 {
+//             left: 0%;
+//         }
 
-        .textWrap {
-            right: 5%;
-            width: 90%;
-        }
+//         .textWrap {
+//             right: 5%;
+//             width: 90%;
+//         }
 
-        .sliderWrap {
-            width: 62%;
-            left: 2%;
-            height: 300px;
-            > div {
-                top: 0px;
-            }
-        }
-    }
+//         .sliderWrap {
+//             width: 62%;
+//             left: 2%;
+//             height: 300px;
+//             > div {
+//                 top: 0px;
+//             }
+//         }
+//     }
 
-    #cont3 {
+//     #cont3 {
 
-        .titleWrap {
-            .center {
-                width: 90%;
-            }
-        }
-        .slideWrap {
-            width: 90%;
-        }
-        .textWrap {
-            .center {
-                width: 90%;
-                .context {
-                    width: 100%;
-                }
-            }
-        }
+//         .titleWrap {
+//             .center {
+//                 width: 90%;
+//             }
+//         }
+//         .slideWrap {
+//             width: 90%;
+//         }
+//         .textWrap {
+//             .center {
+//                 width: 90%;
+//                 .context {
+//                     width: 100%;
+//                 }
+//             }
+//         }
 
-        .gradeWrap {
-            .center {
-                width: 90%;
-            }
-        }
-    }
+//         .gradeWrap {
+//             .center {
+//                 width: 90%;
+//             }
+//         }
+//     }
 
-    #cont4 {
-        .titleWrap {
-            .center {
-                width: 90%;
-                padding-bottom: 20px;
-            }
-        }
+//     #cont4 {
+//         .titleWrap {
+//             .center {
+//                 width: 90%;
+//                 padding-bottom: 20px;
+//             }
+//         }
 
-        .botWrap {
-            .center {
-                width: 90%;
+//         .botWrap {
+//             .center {
+//                 width: 90%;
 
-                .imgWrap {
-                    width: 100%;
-                    top: 0;
-                    height: 150px;
-                    .imgBox.long {
-                        height: 94%;
-                        .textCover {
-                            &::before,
-                            &::after {
-                                background-image: none;
-                            }
-                            p {
-                                display: none;
-                            }
-                        }
-                    }
-                    .imgBox.short {
-                        height: 0;
-                        display: none;
-                    }
-                    &:nth-child(3),
-                    &:nth-child(4) {
-                        position: static;
-                    }
-                }
-            }
-        }
-    }
+//                 .imgWrap {
+//                     width: 100%;
+//                     top: 0;
+//                     height: 150px;
+//                     .imgBox.long {
+//                         height: 94%;
+//                         .textCover {
+//                             &::before,
+//                             &::after {
+//                                 background-image: none;
+//                             }
+//                             p {
+//                                 display: none;
+//                             }
+//                         }
+//                     }
+//                     .imgBox.short {
+//                         height: 0;
+//                         display: none;
+//                     }
+//                     &:nth-child(3),
+//                     &:nth-child(4) {
+//                         position: static;
+//                     }
+//                 }
+//             }
+//         }
+//     }
 
-    #cont5 {
-        .titleWrap {
-            .center {
-                width: 90%;
-            }
-        }
+//     #cont5 {
+//         .titleWrap {
+//             .center {
+//                 width: 90%;
+//             }
+//         }
 
-        .tabWrap {
-            .center {
-                width: 90%;
-                .tabMenu {
-                    li {
-                        a {
-                            height: 100px;
-                            h2 {
-                                font-size: 18px;
-                            }
+//         .tabWrap {
+//             .center {
+//                 width: 90%;
+//                 .tabMenu {
+//                     li {
+//                         a {
+//                             height: 100px;
+//                             h2 {
+//                                 font-size: 18px;
+//                             }
 
-                            p {
-                                display: none;
-                            }
-                        }
-                    }
-                }
+//                             p {
+//                                 display: none;
+//                             }
+//                         }
+//                     }
+//                 }
 
-                .tabContents {
-                    .tabBox {
-                        &:nth-child(2) {
-                            .center {
-                                .textWrap {
-                                    width: 500px;
-                                }
-                            }
-                        }
-                        &:nth-child(3) {
-                            .center {
-                                .textWrap {
-                                    width: 400px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+//                 .tabContents {
+//                     .tabBox {
+//                         &:nth-child(2) {
+//                             .center {
+//                                 .textWrap {
+//                                     width: 500px;
+//                                 }
+//                             }
+//                         }
+//                         &:nth-child(3) {
+//                             .center {
+//                                 .textWrap {
+//                                     width: 400px;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
 
-    #cont6 {
-        .titleWrap {
+//     #cont6 {
+//         .titleWrap {
 
-            .center {
-                width: 90%;
-            }
-        }
+//             .center {
+//                 width: 90%;
+//             }
+//         }
 
-        .contentsWrap {
-            .center {
-                width: 90%;
-            }
-        }
-    }
+//         .contentsWrap {
+//             .center {
+//                 width: 90%;
+//             }
+//         }
+//     }
 
-    #footer {
-        .center {
-            width: 90%;
-        }
-    }
-}
+//     #footer {
+//         .center {
+//             width: 90%;
+//         }
+//     }
+// }
