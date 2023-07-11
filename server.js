@@ -2,7 +2,7 @@ const express = require("express");
 const MongoClient = require("mongodb").MongoClient;
 
 const app = express();
-const port = 3000;
+const port = 8080;
 
 app.set("view engine","ejs");
 app.use(express.urlencoded({extended: true}));
